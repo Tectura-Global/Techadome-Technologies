@@ -1,0 +1,20 @@
+
+
+main#not-found {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main#not-found .site-heading {
+    font-size: 15rem;
+    color: var(--blue);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+main#not-found .site-heading span {
+    color: var(--purple);
+}

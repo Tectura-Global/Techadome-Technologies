@@ -11,11 +11,11 @@ export default function Nav() {
                 <img src="/logo.png" alt="The Official Techadome logo" />
             </Link>
             <ul>
-                <NavLink>Home</NavLink>
-                <NavLink>Services</NavLink>
-                <NavLink>About Us</NavLink>
-                <NavLink>Partners</NavLink>
-                <NavLink>Contact</NavLink>
+                <NavLink className={'nav-link'}>Home</NavLink>
+                <NavLink className={'nav-link'}>Services</NavLink>
+                <NavLink className={'nav-link'}>About Us</NavLink>
+                <NavLink className={'nav-link'}>Partners</NavLink>
+                <NavLink className={'nav-link'}>Contact</NavLink>
             </ul>
             <button className="menu-toggle">
                 <IoMenuSharp />
