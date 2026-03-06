@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="frontend/public/github-banner.png" alt="Project Banner" width="100%">
+    <img src="frontend/public/github-banner.png" alt="Project Banner" width="100%">
 </p>
 
-<h1 align="center">Project Title</h1>
+<h1 align="center">Techadome Technologies</h1>
 
 <p align="center">
-  Short description of the project.
+    The official codebase for the Techadome Technologies website 
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-active-success">
+    <img src="https://img.shields.io/badge/status-active-success">
 </p>
