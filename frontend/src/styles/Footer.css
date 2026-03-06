@@ -28,35 +28,6 @@ footer h2 {
     text-transform: uppercase;
 }
 
-.footer-form {
-    display: flex;
-    padding: .5rem;
-    background: #ffffff20;
-    border: 1px solid #ffffff30;
-}
-
-.footer-form input {
-    flex: 1;
-    color: #ffffff;
-    background: none;
-    border: none;
-}
-
-.footer-form input:focus {
-    outline: none;
-}
-
-.footer-form button {
-    border: none;
-    cursor: pointer;
-    color: #ffffff;
-    font-weight: 500;
-    padding: .5rem 1rem;
-    border-radius: .25rem;
-    text-transform: uppercase;
-    background-color: var(--purple);
-}
-
 footer h2 span {
     color: var(--blue);
 }

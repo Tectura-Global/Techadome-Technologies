@@ -6,7 +6,7 @@ import { Route, Navigate, createBrowserRouter, createRoutesFromElements, Routes 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-		<Route path="/" element={<BaseLayout />}>
+		<Route path="/">
 			<Route index element={<Landing />} />
 			<Route path="*" element={<NotFound />} />
 		</Route>

@@ -53,9 +53,13 @@ nav ul {
     width: 100%;
 }
 
+.nav-actions {
+    display: none;
+}
+
 @media screen and (min-width: 1240px) {
     nav {
-        height: 8rem;
+        height: 6rem;
         padding: 0 2rem;
     }
 
@@ -78,5 +82,18 @@ nav ul {
 
     nav .menu-toggle {
         display: none;
+    }
+
+    nav .nav-actions {
+        display: flex;
+    }
+
+    .nav-action.quote {
+        color: #ffffff;
+        font-weight: 600;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        background-color: var(--purple);
+        border-radius: var(--global-radius);
     }
 }

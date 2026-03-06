@@ -7,7 +7,7 @@ export default function Nav() {
 
     return (
         <nav>
-            <Link className='nav-logo'>
+            <Link className='nav-logo animate__animated animate__fadeInLeft'>
                 <img src="/logo.png" alt="The Official Techadome logo" />
             </Link>
             <ul>
@@ -17,9 +17,14 @@ export default function Nav() {
                 <NavLink className={'nav-link'}>Partners</NavLink>
                 <NavLink className={'nav-link'}>Contact</NavLink>
             </ul>
-            <button className="menu-toggle">
+            <button className="menu-toggle animate__animated animate__fadeInUp">
                 <IoMenuSharp />
             </button>
+            <div className="nav-actions animate__animated animate__fadeInRight">
+                <Link className='nav-action quote'>
+                    Get a Quote
+                </Link>
+            </div>
         </nav>
     )
 }

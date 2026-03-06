@@ -23,3 +23,38 @@
     display: flex;
     flex-direction: column;
 }
+
+.input-container {
+    display: flex;
+    padding: .5rem;
+    background: #ffffff20;
+    border: 1px solid #ffffff30;
+    backdrop-filter: blur(4px);
+}
+
+.input-container input {
+    flex: 1;
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container button {
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background-color: var(--purple);
+}
+
+@media screen and (min-width: 1280px) {
+    .input-container {
+        padding: .25rem;
+    }
+}
