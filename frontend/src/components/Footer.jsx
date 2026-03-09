@@ -8,7 +8,7 @@ function Footer () {
         <footer>
             <div className="footer-container">
                 <div className="footer-contact">
-                    <h2>
+                    <h2 className='site-heading'>
                         Turning it <span>on and off</span><br></br>won't cut it this time.
                     </h2>
                     <SiteInput classTitle={'footer-form'}/>

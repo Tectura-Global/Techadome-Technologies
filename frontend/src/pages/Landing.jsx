@@ -11,7 +11,7 @@ function Landing () {
     useEffect(() => { 
         
         document.title = `Techadome Technologies`      
-        const rootElement = mainRef?.current.parentElement;
+        const rootElement = mainRef?.current.parentElement.parentElement;
 
         if (rootElement) {
             rootElement.classList.add('landing')
@@ -20,26 +20,22 @@ function Landing () {
     }, []);
 
     return (
-        <main id="landing" ref={mainRef}>
-            <header>
-                <div className="header-container">
-                    <Nav />
-                    <div className="header-content">
-                        <h1 className="site-heading">
-                            The IT Department<br></br>
-                            that <span>Never Sleeps</span>
-                        </h1>
-                        <p className="site-p">
-                            An entire floor of expertly-trained 
-                            Developers, Designers and Technicians
-                            <span> at your beck and call</span>
-                        </p>
-                        <SiteInput classTitle={'header-form'}/>
-                    </div>
-                </div>
-            </header>
-        </main>
-    )
+    <>
+        <header ref={mainRef}>
+            <div className="header-container">
+                <h1 className="site-heading animate__animated animate__fadeInUp">
+                    The IT Department<br></br>
+                    that <span>Never Sleeps</span>
+                </h1>
+                <p className="site-p">
+                    An entire floor of expertly-trained 
+                    Developers, Designers and Technicians
+                    <span> at your beck and call</span>
+                </p>
+                <SiteInput classTitle={'header-form'}/>
+            </div>
+        </header>
+    </>)
 }
 
 export default Landing;

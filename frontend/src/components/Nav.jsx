@@ -21,9 +21,9 @@ export default function Nav() {
                 <IoMenuSharp />
             </button>
             <div className="nav-actions animate__animated animate__fadeInRight">
-                <Link className='nav-action quote'>
+                <button className='nav-action site-btn quote'>
                     Get a Quote
-                </Link>
+                </button>
             </div>
         </nav>
     )
