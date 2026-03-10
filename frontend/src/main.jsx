@@ -1,3 +1,4 @@
+import 'animate.css'
 import './styles/global.css'
 
 import App from './App.jsx'

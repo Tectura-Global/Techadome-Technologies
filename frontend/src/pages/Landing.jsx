@@ -1,7 +1,7 @@
 import '../styles/Landing.css'
 
+import Marquee from "react-fast-marquee";
 import SiteInput from '../components/SiteInput';
-import Nav from '../components/Nav';
 import { useEffect, useRef } from "react";
 
 function Landing () {
@@ -23,16 +23,25 @@ function Landing () {
     <>
         <header ref={mainRef}>
             <div className="header-container">
-                <h1 className="site-heading animate__animated animate__fadeInUp">
-                    The IT Department<br></br>
-                    that <span>Never Sleeps</span>
-                </h1>
-                <p className="site-p">
-                    An entire floor of expertly-trained 
-                    Developers, Designers and Technicians
-                    <span> at your beck and call</span>
-                </p>
-                <SiteInput classTitle={'header-form'}/>
+                <div className="header-content">
+                    <h1 className="site-heading animate__animated animate__fadeInUp">
+                        The IT Department<br></br>
+                        that <span>Never Sleeps</span>
+                    </h1>
+                    <p className="site-p animate__animated animate__fadeInUp">
+                        An entire floor of expertly-trained 
+                        Developers, Designers and Technicians
+                        <span> at your beck and call</span>
+                    </p>
+                    <SiteInput classTitle={'header-form animate__animated animate__fadeInUp'}/>
+                </div>
+                <Marquee className='header-marquee' autoFill={true} pauseOnHover={true}>
+                    <img src="/partners/amazon.svg" alt="" className="partner-logo" />
+                    <img src="/partners/adobe.svg" alt="" className="partner-logo" />
+                    <img src="/partners/google.svg" alt="" className="partner-logo" />
+                    <img src="/partners/spotify.svg" alt="" className="partner-logo" />
+                    <img src="/partners/facebook.svg" alt="" className="partner-logo" />
+                </Marquee>
             </div>
         </header>
     </>)

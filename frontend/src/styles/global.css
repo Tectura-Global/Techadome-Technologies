@@ -28,21 +28,36 @@
     gap: .5rem;
     border: none;
     display: flex;
+    outline: none;
     cursor: pointer;
     font-weight: 600;
     background: none;
     padding: .5rem 1rem;
     align-items: center;
-    border: 1px solid transparent;
     border-radius: var(--global-radius);
     transition: .3s ease background-color,
-                .3s ease border;
+    .3s ease opacity;
 }
 
-.site-btn:hover {
-    background-color: #ffffff20 !important;
-    border: 1px solid #ffffff30;
+.site-btn.primary {
+    color: #ffffff;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+}
+
+.site-btn.secondary {
+    color: #ffffff;
+    background-color: #ffffff30;
+    border: 1px solid #ffffff40;
+}
+
+.site-btn.primary:hover {
+    opacity: .8;
+}
+
+.site-btn.secondary:hover {
     backdrop-filter: blur(4px);
+    background-color: #ffffff35;
 }
 
 .site-btn:active {

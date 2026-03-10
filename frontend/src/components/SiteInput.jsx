@@ -18,7 +18,7 @@ export default function SiteInput ({classTitle, onSend}) {
                 onClick={onSend}
                 placeholder='Email Address'
             />
-            <button className="site-btn">
+            <button className="site-btn primary">
                 Get a quote
             </button>
         </div>
