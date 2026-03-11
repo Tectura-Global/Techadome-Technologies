@@ -1,0 +1,164 @@
+#root.landing {
+    position: relative;
+}
+
+#root.landing nav {
+    width: 100%;
+    position: absolute;
+}
+
+main#landing {
+    flex: 1;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/img/header.avif') center no-repeat;
+    background-size: cover;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #000000b2 40%, #00000000);
+}
+
+.header-content {
+    display: flex;
+    z-index: 90 !important;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .site-heading {
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header .site-heading span {
+    color: var(--blue);
+}
+
+header .site-p {
+    /* width: 75%; */
+    margin: 1rem 0;
+    color: #ffffff;
+    font-size: .9rem;
+    text-align: center;
+}
+
+header .site-p span {
+    color: var(--blue);
+}
+
+.header-form {
+    width: 100%;
+    height: 3rem;
+    backdrop-filter: none;
+    transition: .3s ease backdrop-filter;
+    animation: 2s ease light-pulse infinite;
+}
+
+.header-form input {
+    padding: .5rem;
+}
+
+.header-form:focus-within {
+    backdrop-filter: blur(4px);
+}
+
+.header-marquee {
+    height: 3rem;
+    position: relative;
+}
+
+.header-marquee .partner-logo {
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.header-marquee .partner-backdrop {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    background-color: #ffffff20;
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    header .site-heading {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+    
+    header .site-p {
+        width: 50%;
+        margin: 2rem 0;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    .header-form {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    header .site-heading {
+        font-size: 3rem;
+    }
+        
+    header .site-p {
+        width: 50%;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+    }
+    
+    .header-form {
+        width: 50%;
+    }   
+}
+
+@media screen and (min-width: 1240px) {
+    header .site-heading {
+        font-size: 2.5rem;
+    }
+            
+    header .site-p {
+        width: 60%;
+        margin: 2rem 0;
+        font-size: .9rem;
+    }
+        
+    .header-form {
+        width: 70%;
+    }
+    
+    .header-marquee {
+        height: 6rem;
+        position: relative;
+    }
+
+    .header-marquee .partner-logo {
+        height: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    header .site-heading {
+        font-size: 3.5rem;
+        margin-top: 6rem;
+    }
+}

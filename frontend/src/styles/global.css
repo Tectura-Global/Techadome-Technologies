@@ -23,3 +23,118 @@
     display: flex;
     flex-direction: column;
 }
+
+.site-btn {
+    gap: .5rem;
+    border: none;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: none;
+    padding: .5rem 1rem;
+    align-items: center;
+    border-radius: var(--global-radius);
+    transition: .3s ease background-color,
+    .3s ease opacity;
+}
+
+.site-btn.primary {
+    color: #ffffff;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+}
+
+.site-btn.secondary {
+    color: #ffffff;
+    background-color: #ffffff30;
+    border: 1px solid #ffffff40;
+}
+
+.site-btn.primary:hover {
+    opacity: .8;
+}
+
+.site-btn.secondary:hover {
+    backdrop-filter: blur(4px);
+    background-color: #ffffff35;
+}
+
+.site-btn:active {
+    background-color: var(--blue) !important;
+    border: 1px solid transparent;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    padding: .25rem;
+    background: #ffffff20;
+    border: 1px solid #ffffff30;
+    backdrop-filter: blur(4px);
+}
+
+.input-container input {
+    flex: 1;
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: #ffffff80;
+}
+
+.input-container .site-btn {
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: var(--purple);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis [data-lenis-prevent],
+.lenis [data-lenis-prevent-wheel],
+.lenis [data-lenis-prevent-touch],
+.lenis [data-lenis-prevent-vertical],
+.lenis [data-lenis-prevent-horizontal] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.lenis.lenis-autoToggle {
+  transition-property: overflow;
+  transition-duration: 1ms;
+  transition-behavior: allow-discrete;
+}
+
+@media screen and (min-width: 1280px) {
+    .input-container {
+        padding: .25rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .nav-link {
+        font-size: .9rem;
+    }
+    
+    .site-btn {
+        padding: .75rem 1.5rem;
+    }
+}

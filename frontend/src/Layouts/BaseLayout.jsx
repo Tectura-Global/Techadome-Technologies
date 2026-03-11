@@ -5,8 +5,10 @@ import { Outlet, Link } from "react-router-dom";
 function BaseLayout() {
 	return (
 		<>
-			<Nav />
-			<Outlet />
+			<main>
+				<Nav />
+				<Outlet />
+			</main>
 			<Footer />
 		</>
 	);
