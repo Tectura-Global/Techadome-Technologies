@@ -1,5 +1,6 @@
 import 'animate.css'
 import './styles/global.css'
+import './styles/animations.css'
 
 import App from './App.jsx'
 import { StrictMode } from 'react'

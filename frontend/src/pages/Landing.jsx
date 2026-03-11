@@ -1,5 +1,6 @@
 import '../styles/Landing.css'
 
+import CTA from '../components/CTA';
 import Marquee from "react-fast-marquee";
 import SiteInput from '../components/SiteInput';
 import { useEffect, useRef } from "react";
@@ -30,7 +31,7 @@ function Landing () {
                     </h1>
                     <p className="site-p animate__animated animate__fadeInUp">
                         An entire floor of expertly-trained 
-                        Developers, Designers and Technicians
+                        Developers and Technicians
                         <span> at your beck and call</span>
                     </p>
                     <SiteInput classTitle={'header-form animate__animated animate__fadeInUp'}/>
@@ -44,6 +45,7 @@ function Landing () {
                 </Marquee>
             </div>
         </header>
+        <CTA />
     </>)
 }
 

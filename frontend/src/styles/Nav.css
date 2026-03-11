@@ -1,5 +1,5 @@
 nav {
-    z-index: 100 !important;
+    z-index: 99 !important;
     height: 4rem;
     display: flex;
     padding: 0 1rem;
@@ -61,6 +61,32 @@ nav ul {
 .nav-actions {
     gap: 1rem;
     display: none;
+}
+
+.offcanvas {
+    top: 0;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    background: #ffffff;
+    z-index: 100 !important;
+}
+
+.offcanvas-header {
+    height: 6rem;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offcanvas .nav-logo {
+    width: 40%;
+}
+
+.offcanvas ul {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -166,6 +192,11 @@ nav ul {
         justify-content: center;
         border: 1px solid #00000030;
         background-color: #ffffff;
+        transition: .3s ease border;
+    }
+
+    .subnav-item:hover .subnav-icon {
+        border: 1px solid var(--blue);
     }
 
     .nav-logo {

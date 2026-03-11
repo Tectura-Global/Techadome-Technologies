@@ -4,11 +4,10 @@ footer {
     margin: .5rem;
     padding: 1rem;
     display: flex;
-    min-height: 40vh;
     flex-direction: column;
     justify-content: space-between;
     border-radius: var(--global-radius);
-    background-color: var(--black);
+    background-color: #1e1e1e;
 }
 
 .footer-container {
@@ -53,6 +52,7 @@ footer .site-heading span {
 .footer-footnotes {
     gap: 1rem;
     display: flex;
+    padding-top: 1rem;
     flex-direction: column;
     border-top: 1px solid #ffffff30;
 }
@@ -100,7 +100,6 @@ footer .site-heading span {
     }
     
     .footer-footnotes {
-        padding-top: 1rem;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
