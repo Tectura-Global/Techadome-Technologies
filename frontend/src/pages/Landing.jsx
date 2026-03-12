@@ -46,11 +46,8 @@ function Landing () {
                 </Marquee>
             </div>
         </header>
-<<<<<<< HEAD
-=======
         {/* <CTA /> */}
         <Team />
->>>>>>> d3c5260 (adding tema section to live preview)
     </>)
 }
 
