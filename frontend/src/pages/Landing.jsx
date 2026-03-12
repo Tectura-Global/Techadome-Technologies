@@ -45,7 +45,6 @@ function Landing () {
                 </Marquee>
             </div>
         </header>
-        <CTA />
     </>)
 }
 
