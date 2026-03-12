@@ -25,7 +25,7 @@ function Team () {
                             <span> tending to your every need</span>
                         </p>
                     </div>
-                   <div className='team-marquee'>
+                   <Marquee className='team-marquee' pauseOnHover={true}>
                         <div className="team-card">
                             <img src={images.team1} className='team-img' alt="" />
                             <div className="team-details">
@@ -92,7 +92,7 @@ function Team () {
                                 </p>
                             </div>
                         </div>
-                   </div>
+                   </Marquee>
                 </div>
             </div>
         </section>
