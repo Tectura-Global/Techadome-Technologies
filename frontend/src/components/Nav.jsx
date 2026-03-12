@@ -4,8 +4,8 @@ import { Link, NavLink } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
 import { FaServer } from "react-icons/fa";
 import { IoCode } from "react-icons/io5";
-import { FaWindowClose } from "react-icons/fa";
 import { IoHardwareChipOutline } from "react-icons/io5";
+import { IoIosArrowDown } from "react-icons/io";
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -27,7 +27,7 @@ export default function Nav() {
                 <NavLink className={'nav-link'}>Home</NavLink>
                 <NavLink className={'nav-link'}>About Us</NavLink>
                 <NavLink className={'nav-link has-subnav'}>
-                    Services
+                    Services <IoIosArrowDown className='navlink-icon'/>
                     <ul className='subnav'>
                         <h5 className='site-p'>Our Services</h5>
                         <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>

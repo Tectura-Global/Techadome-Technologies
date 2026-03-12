@@ -134,6 +134,9 @@ nav ul {
     }
 
     .nav-link.has-subnav {
+        gap: .25rem;
+        display: flex;
+        align-items: center;
         position: relative;
     }
 
@@ -153,6 +156,14 @@ nav ul {
         transition: .3s ease opacity,
                     .3s ease visibility,
                     .3s ease top;
+    }
+
+    .navlink-icon {
+        transition: .3s ease transform;
+    }
+
+    .has-subnav:hover .navlink-icon {
+        transform: rotateX(180deg);
     }
 
     .has-subnav:hover .subnav {

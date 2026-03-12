@@ -1,6 +1,6 @@
 #cta {
     height: 100vh;
-    padding: 4rem 6rem;
+    padding: 4rem 10rem;
 }
 
 .cta-container {
@@ -15,7 +15,7 @@
 .cta-header {
     display: flex;
     padding: 1rem 0;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
 }
 
@@ -47,6 +47,7 @@
 }
 
 .cta-header .site-btn {
+    display: inline-block;
     color: #ffffff;
     background-color: var(--purple);
 }
@@ -93,6 +94,7 @@
     animation: riseInUp 1s ease-out forwards;
     /* animation: float 5s ease-out 1s infinite; */
     animation-fill-mode: both;
+    transition: .5s ease transform;
 }
 
 .cta-card:nth-child(1) { animation-delay: 0.1s; }
