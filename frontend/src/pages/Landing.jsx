@@ -1,6 +1,7 @@
 import '../styles/Landing.css'
 
 import CTA from '../components/CTA';
+import Team from '../components/Team';
 import Marquee from "react-fast-marquee";
 import SiteInput from '../components/SiteInput';
 import { useEffect, useRef } from "react";
@@ -45,7 +46,8 @@ function Landing () {
                 </Marquee>
             </div>
         </header>
-        <CTA />
+        {/* <CTA /> */}
+        <Team />
     </>)
 }
 
