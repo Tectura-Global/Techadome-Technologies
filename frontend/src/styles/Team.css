@@ -1,6 +1,7 @@
 #team {
     height: 100%;
-    padding: 4rem 10rem;
+    padding: .5rem;
+    margin: 5rem 0;
 }
 
 .team-container {
@@ -27,13 +28,11 @@
 .team-content .header {
     display: flex;
     margin-bottom: 2rem;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .team-content .header .site-p {
-    width: 40%;
-    text-align: right;
-    font-size: 1.6rem;
 }
 
 .team-content .header .site-p span {
@@ -43,7 +42,7 @@
 .team-content .header .site-heading {
     gap: .5rem;
     display: flex;
-    font-size: 2.5rem;
+    margin-bottom: 1rem;
     align-items: flex-end;
     text-transform: uppercase;
 }
@@ -71,7 +70,7 @@
 }
 
 .team-card {
-    width: 30rem;
+    width: 22rem;
     height: 100%;
     display: flex;
     flex-shrink: 0;
@@ -104,6 +103,7 @@
     transform: translateY(100%);
     transition: .3s ease transform;
     border-left: .25rem solid var(--blue);
+    background: linear-gradient(to bottom, #00000000, #000000);
 }
 
 .team-card:hover .team-details {
@@ -117,4 +117,79 @@
 
 .team-details p {
     color: #ffffff;
+}
+
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    
+    #team {
+        padding: 2rem;
+    }
+    
+    .team-content .header .site-heading {
+        font-size: 2rem;
+    }
+    
+    .team-content .header .site-p {
+        width: 60%;
+    }
+    
+    .team-marquee {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    
+    #team {
+        padding: 1rem;
+    }
+    
+    .team-content .header .site-heading {
+        font-size: 2.5rem;
+    }
+    
+    .team-content .header .site-p {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    
+    .team-content .header {
+        flex-direction: row;
+    }
+    
+    .team-content .header .site-p {
+        width: 40%;
+        font-size: 1.4rem;
+        text-align: right;
+    }
+    
+    .team-content .header .site-heading {
+        font-size: 2.5rem;
+    }
+    
+    .team-marquee {
+        height: 70vh;
+    }
+    
+    .team-card {
+        width: 32rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #team {
+        padding: 4rem 2rem;
+    }
+
+    .team-content .header .site-p {
+        width: 35%;
+        font-size: 1.6rem;
+    }
+
+    .team-content .header .site-heading {
+        margin-bottom: 0;
+    }
 }
