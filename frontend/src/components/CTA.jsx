@@ -10,7 +10,7 @@ function CTA () {
                     <span className='site-title'>Why Us?</span>
                     <h2 className='site-heading'>
                         <span className='animated'>
-                            Your business only runs as <br></br>
+                            Your business only runs as
                             smooth as <span className='color'>your system</span> does
                         </span>
                     </h2>

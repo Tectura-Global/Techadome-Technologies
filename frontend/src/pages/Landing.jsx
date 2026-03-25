@@ -46,7 +46,7 @@ function Landing () {
                 </Marquee>
             </div>
         </header>
-        {/* <CTA /> */}
+        <CTA />
         <Team />
     </>)
 }
