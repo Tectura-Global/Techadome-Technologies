@@ -19,7 +19,7 @@ export default function SiteInput ({classTitle, onSend}) {
                 placeholder='Email Address'
             />
             <button className="site-btn primary">
-                Get a quote
+                Book a Call
             </button>
         </div>
     )
