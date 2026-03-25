@@ -58,9 +58,6 @@ export default function Nav() {
             </button>
             <div className="nav-actions animate__animated animate__fadeInRight">
                 <button className='nav-action site-btn primary'>
-                    Get a Quote
-                </button>
-                <button className='nav-action site-btn secondary'>
                     Book a Call
                 </button>
             </div>

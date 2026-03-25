@@ -118,3 +118,78 @@
 .team-details p {
     color: #ffffff;
 }
+
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    
+    #team {
+        padding: 2rem;
+    }
+    
+    .team-content .header .site-heading {
+        font-size: 2rem;
+    }
+    
+    .team-content .header .site-p {
+        width: 60%;
+    }
+    
+    .team-marquee {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    
+    #team {
+        padding: 1rem;
+    }
+    
+    .team-content .header .site-heading {
+        font-size: 2.5rem;
+    }
+    
+    .team-content .header .site-p {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    
+    .team-content .header {
+        flex-direction: row;
+    }
+    
+    .team-content .header .site-p {
+        width: 40%;
+        font-size: 1.4rem;
+        text-align: right;
+    }
+    
+    .team-content .header .site-heading {
+        font-size: 3rem;
+    }
+    
+    .team-marquee {
+        height: 70vh;
+    }
+    
+    .team-card {
+        width: 32rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #team {
+        padding: 4rem 2rem;
+    }
+
+    .team-content .header .site-p {
+        width: 35%;
+        font-size: 1.6rem;
+    }
+
+    .team-content .header .site-heading {
+        margin-bottom: 0;
+    }
+}

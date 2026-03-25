@@ -1,0 +1,165 @@
+#contact {
+    background: url('../assets/img/contact.webp') center no-repeat;
+    background-size: cover;
+}
+
+.contact-container {
+    height: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: #000000bd;
+    justify-content: space-between;
+}
+
+#contact .site-heading {
+    color: #fff;
+    font-size: 10vw;
+    padding: 0 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#contact .site-heading::after {
+    top: 0;
+    left: 0;
+    content: '';
+    width: .5rem;
+    height: 100%;
+    position: absolute;
+    background: var(--blue);
+    border-radius: var(--global-radius);
+}
+
+#contact .site-heading span {
+    color: var(--blue);
+}
+
+#contact .site-p {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#contact-form {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form .form-block {
+    display: flex;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder,
+#contact-form select::placeholder {
+    color: #ffffff;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+    flex: 1;
+    border: none;
+    padding: .75rem;
+    color: #ffffff;
+    background-color: #ffffff1e;
+    transition: border .3s ease,
+                backdrop-filter .5s ease;
+    border-bottom: 2px solid #ffffff;
+}
+
+#contact-form input:focus-within,
+#contact-form textarea:focus-within,
+#contact-form select:focus-within {
+    backdrop-filter: blur(4px);
+}
+
+#contact-form input:focus-within,
+#contact-form textarea:focus-within {
+    outline: none;
+    border-bottom: 2px solid var(--purple);
+}
+
+#contact-form .form-submit {
+    flex: .5;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: .75rem 0;
+    height: fit-content;
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+    transition: background-color .3s ease,
+                flex .5s ease;
+}
+
+#contact-form .form-submit:hover {
+    flex: 1;
+    background-color: transparent;
+}
+
+#contact-form .form-block.submit {
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 720px) {
+        
+    #contact .site-heading {
+        font-size: 8vw;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    
+    #contact .site-heading::after {
+        width: 1rem;
+    }
+    
+    #contact .site-p {
+        width: 60%;
+        margin-bottom: 3rem;
+    }
+    
+    #contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    #contact .site-heading {
+        font-size: 6vw;
+        margin-bottom: 10rem;
+    }
+    
+    .contact-container {
+        padding: 2rem;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contact .site-p {
+        flex: .3;
+    }
+
+    #contact-form {
+        flex: .5;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+
+    #contact {
+        height: 100vh;
+    }
+
+    .contact-content .site-p {
+        font-size: 1.2rem;
+    }
+}
