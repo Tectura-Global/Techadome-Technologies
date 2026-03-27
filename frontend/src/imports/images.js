@@ -7,7 +7,7 @@ import teamKhutso from '../assets/img/Team/khutso.webp'
 import teamSoso from '../assets/img/Team/soso.webp'
 import teamInnocent from '../assets/img/Team/innocent.webp'
 import teamAlbert from '../assets/img/Team/albert.webp'
-import teamShadow from '../assets/img/Team/Shadow.webp'
+import teamShadow from '../assets/img/Team/shadow.webp'
 
 const images = {
     cta1,
