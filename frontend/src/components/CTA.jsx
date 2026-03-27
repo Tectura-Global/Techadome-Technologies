@@ -26,7 +26,7 @@ function CTA () {
                 <div className="cta-cards">
                     <div className="cta-card">
                         <p className="site-p cta-card-title">
-                            24/7 System Security
+                            Intuitive Software Solutions 
                         </p>
                     </div>
                     <div className="cta-card">

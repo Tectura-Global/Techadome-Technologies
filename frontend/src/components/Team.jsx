@@ -27,68 +27,57 @@ function Team () {
                     </div>
                    <Marquee className='team-marquee' pauseOnHover={true}>
                         <div className="team-card">
-                            <img src={images.team1} className='team-img' alt="" />
+                            <img src={images.teamInnocent} className='team-img' alt="" />
                             <div className="team-details">
                                 <h4 className='site-heading'>
-                                    Kgosi Mogotsi
+                                    Innocent Mhura
                                 </h4>
                                 <p className='site-p'>
-                                    Software Developer
+                                    Head of IT
                                 </p>
                             </div>
                         </div>
                         <div className="team-card">
-                            <img src={images.team2} className='team-img' alt="" />
+                            <img src={images.teamKhutso} className='team-img' alt="" />
                             <div className="team-details">
                                 <h4 className='site-heading'>
-                                    Lana Banana
+                                    Khutso Malatji
                                 </h4>
                                 <p className='site-p'>
-                                    Network Architect
+                                    IT Manager
                                 </p>
                             </div>
                         </div>
                         <div className="team-card">
-                            <img src={images.team3} className='team-img' alt="" />
+                            <img src={images.teamLenford} className='team-img' alt="" />
                             <div className="team-details">
                                 <h4 className='site-heading'>
-                                    Nellan Khaya
+                                    Lenford Ndhovela
                                 </h4>
                                 <p className='site-p'>
-                                    Network Technician
+                                    IT Manager
                                 </p>
                             </div>
                         </div>
                         <div className="team-card">
-                            <img src={images.team4} className='team-img' alt="" />
+                            <img src={images.teamShadow} className='team-img' alt="" />
                             <div className="team-details">
                                 <h4 className='site-heading'>
-                                    George Mann
+                                    Shadow Ngomane
                                 </h4>
                                 <p className='site-p'>
-                                    Cybersecurity Expert
+                                    Network Specialist
                                 </p>
                             </div>
                         </div>
                         <div className="team-card">
-                            <img src={images.team5} className='team-img' alt="" />
+                            <img src={images.teamSoso} className='team-img' alt="" />
                             <div className="team-details">
                                 <h4 className='site-heading'>
-                                    Jasper Doberan
+                                    Nangamso Myingwa
                                 </h4>
                                 <p className='site-p'>
-                                    Field Technician
-                                </p>
-                            </div>
-                        </div>
-                        <div className="team-card">
-                            <img src={images.team6} className='team-img' alt="" />
-                            <div className="team-details">
-                                <h4 className='site-heading'>
-                                    Babalwa Ngubane
-                                </h4>
-                                <p className='site-p'>
-                                    Field Technician
+                                    Network Specialist
                                 </p>
                             </div>
                         </div>
