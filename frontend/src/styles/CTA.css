@@ -1,6 +1,8 @@
 #cta {
     height: 100%;
     padding: 4rem 1rem;
+    background: url(../assets/img/gradient.svg) bottom no-repeat;
+    background-size: contain;
 }
 
 .cta-container {
@@ -153,7 +155,8 @@
 @media screen and (min-width: 1280px) {
     
     #cta {
-            padding: 2rem 5rem;
+        height: 100vh;
+        padding: 2rem 5rem;
     }
 
     .cta-header {
@@ -163,6 +166,7 @@
     }
 
     .cta-container {
+        height: fit-content;
         flex-direction: row;
         justify-content: space-between;
     }
