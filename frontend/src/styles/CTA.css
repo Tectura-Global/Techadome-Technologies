@@ -1,8 +1,9 @@
 #cta {
+    gap: 2rem;
     height: 100%;
+    display: flex;
     padding: 4rem 1rem;
-    background: url(../assets/img/gradient.svg) bottom no-repeat;
-    background-size: contain;
+    flex-direction: column;
 }
 
 .cta-container {
@@ -12,6 +13,71 @@
     text-align: center;
     flex-direction: column;
     border-radius: var(--global-radius);
+}
+
+.cta-extension {
+    flex: 1;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-card {
+    padding: 1rem;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E9D8B10;
+    border-radius: var(--global-radius);
+    transition: .5s ease background-color;
+}
+
+.cta-card:hover {
+    background-color: var(--purple);
+}
+
+.cta-card-icon {
+    width: 60%;
+    color: var(--purple);
+    height: fit-content;
+    transition: .3s ease color,
+                .5s ease transform;
+}
+
+.cta-card:hover .cta-card-icon {
+    color: #ffffff;
+    transform: translateY(-50%);
+}
+
+.cta-title {
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: .5s ease color;
+}
+
+.cta-card:hover .cta-title {
+    color: #ffffff;
+}
+
+.cta-text {
+    text-align: center;
+    transition: .3s ease color;
+}
+
+.cta-content {
+    transition: .5s ease top,
+                .5s ease transform;
+}
+
+.cta-card:hover .cta-content {
+    top: 30%;
+    /* position: absolute; */
+    transform: translateY(-50%);
+}
+
+.cta-card:hover .cta-text {
+    color: #ffffff;
 }
 
 .cta-header {
@@ -39,7 +105,7 @@
 
 .cta-header .site-p {
     /* width: 40%; */
-    opacity: .5;
+    /* opacity: .5; */
     font-size: 1rem;
     color: var(--blue);
     margin: 1rem 0;
@@ -78,34 +144,6 @@
     animation-fill-mode: both;
 }
 
-.cta-cards {
-    flex: 1;
-    gap: 1rem;
-    /* padding: 3rem; */
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    border-radius: var(--global-radius);
-}
-
-.cta-card {
-    flex: 1;
-    height: 25rem;
-    padding: 1rem;
-    background-color: #1e9d8a10;
-    /* background-color: #ffffff; */
-    border: 1px solid var(--blue);
-    border-radius: var(--global-radius);
-    animation: riseInUp 1s ease-out forwards;
-    /* animation: float 5s ease-out 1s infinite; */
-    animation-fill-mode: both;
-    transition: .5s ease transform;
-}
-
-.cta-card:nth-child(1) { animation-delay: 0.1s; }
-.cta-card:nth-child(2) { animation-delay: 0.25s; }
-.cta-card:nth-child(3) { animation-delay: 0.5s;  }
-
 .cta-card .site-p {
     font-size: 1.1rem;
 }
@@ -130,6 +168,10 @@
         margin: 2rem 0;
     }
 
+    .cta-extension {
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -143,7 +185,6 @@
     }
     
     .cta-header .site-p {
-        width: 80%;
         margin: 0;
     }
     
@@ -155,14 +196,26 @@
 @media screen and (min-width: 1280px) {
     
     #cta {
+        gap: 5rem;
         height: 100vh;
         padding: 2rem 5rem;
     }
 
     .cta-header {
-        flex: .4;
+        width: 100%;
         padding: 1rem 0;
+        flex-direction: row;
         align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .cta-header .content {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
     }
 
     .cta-container {
@@ -171,19 +224,21 @@
         justify-content: space-between;
     }
     
-    .cta-header .site-title::after {
+    .cta-header .site-title {
         display: none;
     }
 
     .cta-header .site-heading {
-        /* width: 80%; */
-        font-size: 2.5rem;
+        width: 40%;
+        font-size: 3rem;
         text-align: left;
+        flex-shrink: 0;
     }
     
     .cta-header .site-p {
         /* width: 50%; */
-        text-align: left;
+        text-align: right;
+        font-size: 1.5rem;
     }
     
     .cta-header .site-btn {
@@ -201,9 +256,13 @@
         margin: 5rem 0;
         padding: 2rem 8rem;
     }
-        
+    
+    .cta-header {
+        /* flex: .4; */
+    }
+
     .cta-header .site-heading {
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
         
     .cta-header .site-p {
