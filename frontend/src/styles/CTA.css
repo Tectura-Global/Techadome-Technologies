@@ -30,7 +30,8 @@
     overflow: hidden;
     position: relative;
     flex-direction: column;
-    background-color: #eeeeee;
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--blue);
     border-radius: var(--global-radius);
     transition: .5s ease background-color;
 }

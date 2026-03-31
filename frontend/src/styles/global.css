@@ -4,7 +4,7 @@
 :root {
     --black: #000000;
     --blue: #1E9D8B;
-    --purple: #7C109A;
+    --purple: #7c109a;
     --global-radius: .5rem;
     --base-font: 'Albert Sans', 'Noto Sans';
 }
@@ -15,6 +15,18 @@
     box-sizing: border-box;
 
     font-family: var(--base-font);
+}
+
+body {
+  background-color: #ffffff;
+
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgb(124, 16, 154, 0.2) 1px,
+    transparent 0
+  );
+
+  background-size: 24px 24px;
 }
 
 #root {
