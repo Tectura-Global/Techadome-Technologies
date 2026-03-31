@@ -6,6 +6,8 @@ import { FaServer } from "react-icons/fa";
 import { IoCode } from "react-icons/io5";
 import { IoHardwareChipOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdSignalWifi4BarLock } from "react-icons/md";
+import { FaUserShield } from "react-icons/fa6";
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -47,6 +49,18 @@ export default function Nav() {
                                 <FaServer />
                             </span>
                             Server Solutions
+                        </NavLink>
+                        <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>
+                            <span className='subnav-icon'>
+                                <MdSignalWifi4BarLock />
+                            </span>
+                            Network Solutions
+                        </NavLink>
+                        <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>
+                            <span className='subnav-icon'>
+                                <FaUserShield />
+                            </span>
+                            Managed Security
                         </NavLink>
                     </ul>
                 </NavLink>
