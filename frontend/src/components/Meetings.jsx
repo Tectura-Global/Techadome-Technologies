@@ -10,7 +10,9 @@ function Meetings () {
                 </h2>
                 <p className="site-p">
                     With Techadome Technologies' <span>Smart Building Network Architecture</span> & <span>Structured Cabling, </span>
-                    connectivity is a given, no matter where in the building you are. And no meeting goes on longer than it needs to.
+                    uninterrupted connectivity is a given no matter where in the building you are.
+                    
+                    <br></br><br></br>And no meeting goes on longer than it needs to.
                 </p>
             </div>
         </section>
