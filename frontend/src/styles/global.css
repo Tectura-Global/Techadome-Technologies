@@ -19,7 +19,7 @@
 
 body {
   background-color: #ffffff;
-
+  background-attachment: fixed;
   background-image: radial-gradient(
     circle at 1px 1px,
     rgb(124, 16, 154, 0.2) 1px,

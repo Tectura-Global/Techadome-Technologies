@@ -1,6 +1,6 @@
 #team {
     height: 100%;
-    padding: 1rem;
+    padding: 4rem 1rem;
 }
 
 .team-container {
@@ -62,14 +62,20 @@
     flex: 1;
     width: 100%;
     overflow: hidden;
+    position: relative;
     border-radius: var(--global-radius);
 }
 
 .team-card .team-img img {
+    top: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
+    height: auto;
+    position: absolute;
+    transition: 3s ease transform;
+}
+
+.team-card:hover .team-img img {
+    transform: translateY(-30%);
 }
 
 .team-details {
@@ -83,7 +89,7 @@
 }
 
 .team-details p {
-    /* color: #ffffff; */
+    color: var(--purple);
 }
 
 
