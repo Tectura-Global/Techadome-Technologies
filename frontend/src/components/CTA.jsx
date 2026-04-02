@@ -33,7 +33,7 @@ function CTA () {
                     <PiNetworkFill className='cta-card-icon' />
                     <div className="cta-content">
                         <h3 className="cta-title">
-                            Synchronised Network Architecture
+                            Polymorphic Network Infrastracture
                         </h3>
                         <p className="cta-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -45,7 +45,7 @@ function CTA () {
                     <AiOutlineCloudServer className='cta-card-icon' />
                     <div className="cta-content">
                         <h3 className="cta-title">
-                            Hybrid Cloud Architecture
+                            Synchronized Cloud Architecture
                         </h3>
                         <p className="cta-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.

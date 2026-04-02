@@ -1,0 +1,82 @@
+#meetings {
+    height: 50vh;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: var(--global-radius);
+    background: url(../assets/img/meetings.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.meetings-container {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #00000060;
+    justify-content: space-between;
+}
+
+#meetings .site-heading,
+#meetings .site-p {
+    color: #ffffff;
+}
+
+#meetings .site-heading span {
+    color: var(--blue);
+}
+
+#meetings .site-p span {
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    
+    #meetings {
+        margin: 2rem;
+    }
+
+    #meetings .site-heading {
+        width: 70%;
+        font-size: 5vw;
+    }
+
+    #meetings .site-p {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    #meetings {
+        height: 80vh;
+    }
+    
+    #meetings .site-heading {
+        font-size: 4vw;
+    }
+
+    #meetings .site-p {
+        width: 50%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .meetings-container {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {    
+    #meetings {
+        margin: 2rem 8rem;
+    }
+    
+    #meetings .site-heading {
+        width: 50%;
+        font-size: 3vw;
+    }
+
+    #meetings .site-p {
+        width: 30%;
+    }
+}
