@@ -1,7 +1,5 @@
 import '../styles/contact.css'
 
-//contact section
-
 function Contact () {
 
     return (
