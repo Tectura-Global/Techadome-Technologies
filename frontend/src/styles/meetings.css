@@ -3,7 +3,7 @@
     margin: 1rem;
     overflow: hidden;
     border-radius: var(--global-radius);
-    background: url(../assets/img/meetings.jpg) center no-repeat;
+    background: url(../assets/img/meetings.webp) center no-repeat;
     background-size: cover;
 }
 
