@@ -50,6 +50,7 @@ function Landing () {
         <CTA />
         <Meetings />
         <Team />
+        <Contact />
     </>)
 }
 
