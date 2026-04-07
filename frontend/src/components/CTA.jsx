@@ -20,7 +20,7 @@ function CTA () {
                         <p className="site-p">
                             With Techadome Technologies' around-the-clock 
                             Technical Support and intuitive Software and 
-                            Security Solutions, <span>business never has to wait.</span>
+                            Security Solutions, <br></br><span>business never has to wait.</span>
                         </p>
                         <button className="site-btn">
                             Book a Call
