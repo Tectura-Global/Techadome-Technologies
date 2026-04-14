@@ -42,7 +42,7 @@ function CTA () {
                     </div>
                 </div>
                 <div className="cta-card">
-                    <AiOutlineCloudServer className='cta-card-icon' />
+                    {/* <Illustration type="cloud" size="lg" className="cta-card-icon" /> */}
                     <div className="cta-content">
                         <h3 className="cta-title">
                             Synchronized Cloud Architecture
