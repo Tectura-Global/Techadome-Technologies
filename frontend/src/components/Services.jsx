@@ -1,5 +1,5 @@
 import 'animate.css';
-import { useRef, useState } from 'react';
+import { act, useRef, useState } from 'react';
 import '../styles/services.css';
 
 function Services () {
@@ -22,7 +22,7 @@ function Services () {
                 <ul id="carousel-list">
                     <li
                         className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('red')}
+                        onMouseEnter={() => setActiveCourse('Smart Building Cabling Solutions')}
                     >
                         <h3 className="site-header">Smart Building Cabling Solutions</h3>
                         <span>NQF 4</span>
@@ -30,7 +30,7 @@ function Services () {
 
                     <li
                         className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('orange')}
+                        onMouseEnter={() => setActiveCourse('Hybrid Cloud Connectivity')}
                     >
                         <h3 className="site-header">Hybrid Cloud Connectivity</h3>
                         <span>NQF 5</span>
@@ -38,7 +38,7 @@ function Services () {
 
                     <li
                         className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('yellow')}
+                        onMouseEnter={() => setActiveCourse('Data Security')}
                     >
                         <h3 className="site-header">Data Security</h3>
                         <span>NQF 4</span>
@@ -46,7 +46,7 @@ function Services () {
 
                     <li
                         className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('green')}
+                        onMouseEnter={() => setActiveCourse('Microsoft 365 Cloud Migration')}
                     >
                         <h3 className="site-header">Microsoft 365 Cloud Migration</h3>
                         <span>NQF 5</span>
@@ -54,7 +54,7 @@ function Services () {
 
                     <li
                         className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('blue')}
+                        onMouseEnter={() => setActiveCourse('Employee Management Systems')}
                     >
                         <h3 className="site-header">Employee Management Systems</h3>
                         <span>NQF 3</span>
@@ -62,7 +62,7 @@ function Services () {
 
                     <li
                         className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('purple')}
+                        onMouseEnter={() => setActiveCourse('Building Security Systems')}
                     >
                         <h3 className="site-header">Building Security Systems</h3>
                         <span>NQF 6</span>
@@ -70,9 +70,34 @@ function Services () {
                 </ul>
             </aside>
 
-            <div id="carousel-panels" style={{backgroundColor: activeCourse}}>
-                <p>{activeCourse}</p>
+            <div id="carousel-panels" key={activeCourse} className='animate__animated animate__fadeIn'>
+
+                <div id="panel-1" className='panel'>
+                    <p>Salmon</p>
+                </div>
+
+                <div id="panel-2" className='panel'>
+                    <p>Broccoli</p>
+                </div>
+
+                <div id="panel-3" className='panel'>
+                    <p>Tamago</p>
+                </div>
+
+                <div id="panel-4" className='panel'>
+                    <p>{activeCourse}</p>
+                </div>
+
+                <div id="panel-5" className='panel'>
+                    <p>Edamame</p>
+                </div>
+
+                <div id="panel-6" className='panel'>
+                    <p>Tomato</p>
+                </div>
+
             </div>
+  
         </div>
     )
 }

@@ -1,5 +1,5 @@
 #hypermenu {
-    height: 100%;
+    height: 100vh;
     margin: 5rem 2rem;
     max-height: 80vh;
 }
@@ -15,6 +15,7 @@
 .carousel-sidebar {
     width: 30%;
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -93,80 +94,63 @@
 }
 
 #carousel-panels {
-    flex: 1;
+    gap: 1rem;
+    width: 65%;
+    /* height: 100%; */
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: var(--global-radius);
+    grid-template-columns: repeat(4, 1fr);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1) */
+}
+
+#carousel-panels > .panel {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid #1E92A3; */
-}
-
-#carousel-panels .bg-graphic {
-    width: 80%;
-    z-index: 0;
-    opacity: .25;
-    position: absolute;
-}
-
-#carousel-panels.hide {
-
-}
-
-#carousel-panels.show {
-
-}
-
-#carousel-panels img {
-    z-index: 5;
-    width: auto;
-    height: 100%;
-    object-fit: contain;
+    border-radius: var(--global-radius);
+    background-color: #00000010;
 }
 
 .carousel-panel {
     display: flex;
 }
 
-.carousel-img {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+#panel-1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: rgba(255, 182, 193, 0.5);
 }
 
-.course-details {
-    width: 50%;
-    height: 100%;
-    padding: 1rem 2rem;
+#panel-2 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: rgba(173, 255, 47, 0.5);
 }
 
-.course-details .site-header {
-    color: #ffffff;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+#panel-3 {
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgba(255, 255, 224, 0.5);
 }
 
-.course-details .site-header span {
-    color: #1E92A3;
-    font-family: inherit;
+#panel-4 {
+    grid-column: span 2;
+    grid-row: span 4;
+    background-color: rgba(210, 180, 140, 0.5);
 }
 
-.course-details .site-p {
-    color: #ffffff;
-    font-size: .9rem;
-    margin-bottom: 1rem;
+#panel-5 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: rgba(144, 238, 144, 0.5);
 }
 
-.course-list {
-    font-size: .9rem;
-    color: #ffffff;
+#panel-6 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: rgba(255, 160, 122, 0.5);
 }
-
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 2 / 2 / 3 / 3; }
-.div3 { grid-area: 3 / 1 / 4 / 2; }
-
 
 @media screen and (min-width: 1600px) {    
     #hypermenu {
