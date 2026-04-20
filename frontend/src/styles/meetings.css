@@ -1,5 +1,5 @@
 #meetings {
-    height: 50vh;
+    height: 100%;
     margin: 1rem;
     overflow: hidden;
     border-radius: var(--global-radius);
@@ -29,6 +29,16 @@
     font-weight: 600;
 }
 
+.meetings-cards {
+    justify-content: space-between;
+    display: flex;
+}
+
+.meeting-card {
+    min-height: 25rem;
+    border: 1px solid var(--purple);
+}
+
 @media screen and (min-width: 768px) {
     
     #meetings {
@@ -47,7 +57,7 @@
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
     #meetings {
-        height: 80vh;
+        /* min-height: 80vh; */
     }
     
     #meetings .site-heading {
@@ -61,6 +71,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+    #meetings {
+        height: 80vh;
+    }
+    
     .meetings-container {
         padding: 2rem;
     }
