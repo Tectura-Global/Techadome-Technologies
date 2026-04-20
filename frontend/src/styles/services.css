@@ -1,0 +1,184 @@
+#hypermenu {
+    height: 100%;
+    margin: 5rem 2rem;
+    max-height: 80vh;
+}
+
+.carousel-container.desktop {
+    gap: 2rem;
+    height: 100%;
+    display: flex;
+    margin: 4rem 8rem;
+    justify-content: space-between;
+}
+
+.carousel-sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#carousel-list {
+    gap: 1rem;
+    display: flex;
+    max-height: 60%;
+    overflow-y: auto;
+    flex-direction: column;
+    position: relative;
+    overscroll-behavior-y: contain;
+
+    -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 80%,           /* solid up to 80% */
+    transparent 100%     /* fade in the last 20% */
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 80%,
+        transparent 100%
+    );
+}
+
+#carousel-list::before {
+    top: -3rem;
+    left: 0;
+    position: absolute;
+    color: var(--purple);
+    content: 'Scroll for more';
+}
+
+.carousel-sidebar .site-heading {
+    font-size: 3rem;
+    color: #0B0F14;
+    margin-bottom: 1rem;
+}
+
+.carousel-sidebar h2 span {
+    color: var(--purple);
+    font-family: inherit;
+}
+
+.carousel-sidebar .site-p {
+    color: var(--blue);
+    margin-bottom: 2rem;
+}
+
+.carousel-item{
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--blue);
+    transition: .3s ease background-color;
+}
+
+.carousel-item:hover {
+    background-color: #1E92A3;
+}
+
+.carousel-item .site-header {
+    color: #0B0F14;
+    transition: .3s ease color;
+}
+
+#root.light .carousel-item:hover .site-header {
+    color: #ffffff;
+}
+
+.carousel-item span {
+    color: var(--purple);
+}
+
+#carousel-panels {
+    flex: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #1E92A3; */
+}
+
+#carousel-panels .bg-graphic {
+    width: 80%;
+    z-index: 0;
+    opacity: .25;
+    position: absolute;
+}
+
+#carousel-panels.hide {
+
+}
+
+#carousel-panels.show {
+
+}
+
+#carousel-panels img {
+    z-index: 5;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-panel {
+    display: flex;
+}
+
+.carousel-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.course-details {
+    width: 50%;
+    height: 100%;
+    padding: 1rem 2rem;
+}
+
+.course-details .site-header {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.course-details .site-header span {
+    color: #1E92A3;
+    font-family: inherit;
+}
+
+.course-details .site-p {
+    color: #ffffff;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.course-list {
+    font-size: .9rem;
+    color: #ffffff;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 2 / 3 / 3; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+
+
+@media screen and (min-width: 1600px) {    
+    #hypermenu {
+        margin: 5rem 8rem;
+    }
+    
+    .carousel-container .site-heading {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    #meetings .site-p {
+        width: 30%;
+    }
+}

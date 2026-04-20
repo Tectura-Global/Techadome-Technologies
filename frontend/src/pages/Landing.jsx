@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import SiteInput from '../components/SiteInput';
 import { useEffect, useRef } from "react";
 import Contact from '../components/Contact';
+import Services from '../components/Services';
 import Meetings from '../components/Meetings';
 
 function Landing () {
@@ -50,6 +51,7 @@ function Landing () {
         </header>
         <CTA />
         <Meetings />
+        <Services />
         <Team />
         <Contact />
     </>)
