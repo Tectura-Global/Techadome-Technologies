@@ -7,6 +7,7 @@ function Services () {
     const [activeCourse, setActiveCourse] = useState('');
 
     return (
+        
         <div id="hypermenu" className="carousel-container desktop">
             
             <aside className="carousel-sidebar">
@@ -70,34 +71,34 @@ function Services () {
                 </ul>
             </aside>
 
-            <div id="carousel-panels" key={activeCourse} className='animate__animated animate__fadeIn'>
+            {activeCourse && 
+                (<div id="carousel-panels" key={activeCourse} className='animate__animated animate__fadeIn'>
 
-                <div id="panel-1" className='panel'>
-                    <p>Salmon</p>
-                </div>
+                    <div id="panel-1" className='panel'>
+                        <p>Salmon</p>
+                    </div>
 
-                <div id="panel-2" className='panel'>
-                    <p>Broccoli</p>
-                </div>
+                    <div id="panel-2" className='panel'>
+                        <p>Broccoli</p>
+                    </div>
 
-                <div id="panel-3" className='panel'>
-                    <p>Tamago</p>
-                </div>
+                    <div id="panel-3" className='panel'>
+                        <p>Tamago</p>
+                    </div>
 
-                <div id="panel-4" className='panel'>
-                    <p>{activeCourse}</p>
-                </div>
+                    <div id="panel-4" className='panel'>
+                        <p>{activeCourse}</p>
+                    </div>
 
-                <div id="panel-5" className='panel'>
-                    <p>Edamame</p>
-                </div>
+                    <div id="panel-5" className='panel'>
+                        <p>Edamame</p>
+                    </div>
 
-                <div id="panel-6" className='panel'>
-                    <p>Tomato</p>
-                </div>
+                    <div id="panel-6" className='panel'>
+                        <p>Tomato</p>
+                    </div>
 
-            </div>
-  
+                </div>)}
         </div>
     )
 }
