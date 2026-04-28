@@ -87,7 +87,7 @@ function Services () {
                     </div>
 
                     <div id="panel-4" className='panel'>
-                        <p>{activeCourse}</p>
+                        <h1>{activeCourse}</h1>
                     </div>
 
                     <div id="panel-5" className='panel'>

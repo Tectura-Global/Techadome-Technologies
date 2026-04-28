@@ -9,6 +9,8 @@ import teamInnocent from '../assets/img/Team/innocent.webp'
 import teamAlbert from '../assets/img/Team/albert.webp'
 import teamShadow from '../assets/img/Team/shadow.webp'
 
+import welcome from '../assets/img/welcome.jpg'
+
 const images = {
     cta1,
     cta2,
@@ -19,6 +21,7 @@ const images = {
     teamInnocent,
     teamAlbert,
     teamShadow,
+    welcome,
 }
 
 export default images

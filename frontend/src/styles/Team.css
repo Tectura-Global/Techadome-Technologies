@@ -155,6 +155,10 @@
     #team .header .site-heading {
         font-size: 3rem;
     }
+
+    .team-img img {
+        object-position: center;
+    }
     
 }
 

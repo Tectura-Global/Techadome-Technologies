@@ -201,6 +201,9 @@
         padding: 2rem;
     }
     
+    .cta-header {
+        align-items: top;
+    }
     .cta-header .site-heading {
         width: 80%;
     }
