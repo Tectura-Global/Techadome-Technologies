@@ -88,6 +88,7 @@ function Services () {
 
                     <div id="panel-4" className='panel'>
                         <h1>{activeCourse}</h1>
+                        <p>This is where the summary of the service will go.</p>
                     </div>
 
                     <div id="panel-5" className='panel'>
