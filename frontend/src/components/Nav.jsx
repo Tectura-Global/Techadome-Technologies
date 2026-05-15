@@ -20,6 +20,10 @@ export default function Nav() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const handleNav = () => {
+        
+    }
+
     return (
         <nav>
             <Link className='nav-logo animate__animated animate__fadeInLeft'>
@@ -28,42 +32,54 @@ export default function Nav() {
             <ul className=' animate__animated animate__fadeIn'>
                 <NavLink className={'nav-link'}>Home</NavLink>
                 <NavLink className={'nav-link'}>About Us</NavLink>
-                <NavLink className={'nav-link has-subnav'}>
-                    Services <IoIosArrowDown className='navlink-icon'/>
-                    <ul className='subnav'>
-                        <h5 className='site-p'>Our Services</h5>
-                        <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>
-                            <span className='subnav-icon'>
-                                <IoCode />
-                            </span>
-                            Software Solutions
-                        </NavLink>
-                        <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>
-                            <span className='subnav-icon'>
-                                <IoHardwareChipOutline />
-                            </span>
-                            Hardware Solutions
-                        </NavLink>
-                        <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>
-                            <span className='subnav-icon'>
-                                <FaServer />
-                            </span>
-                            Server Solutions
-                        </NavLink>
-                        <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>
-                            <span className='subnav-icon'>
-                                <MdSignalWifi4BarLock />
-                            </span>
-                            Network Solutions
-                        </NavLink>
-                        <NavLink className={'subnav-item animate__animated animate__fadeInLeft'}>
-                            <span className='subnav-icon'>
-                                <FaUserShield />
-                            </span>
-                            Managed Security
-                        </NavLink>
-                    </ul>
-                </NavLink>
+                <a className={'nav-link has-subnav'} href="#services">
+                    Services
+                    {/* <ul className='subnav'>
+                    <h5 className='site-p'>Our Services</h5>
+
+                    <button 
+                        className={'subnav-item animate__animated animate__fadeInLeft'}
+                        onClick={handleNav(1)}>
+                        Managed Security Services (MSSP)
+                    </button>
+
+                    <button 
+                        className={'subnav-item animate__animated animate__fadeInLeft'}
+                        onClick={handleNav(2)}>
+                        Network Infrastructure as a Service
+                    </button>
+
+                    <button 
+                        className={'subnav-item animate__animated animate__fadeInLeft'}
+                        onClick={handleNav(3)}>
+                        Smart Building & Structured Cabling
+                    </button>
+
+                    <button 
+                        className={'subnav-item animate__animated animate__fadeInLeft'}
+                        onClick={handleNav(4)}>
+                        SD-WAN & Connectivity Management
+                    </button>
+
+                    <button 
+                        className={'subnav-item animate__animated animate__fadeInLeft'}
+                        onClick={handleNav(5)}>
+                        Cloud & Microsoft 365 Services
+                    </button>
+
+                    <button 
+                        className={'subnav-item animate__animated animate__fadeInLeft'}
+                        onClick={handleNav(6)}>
+                        IT Support & NOC Services
+                    </button>
+
+                    <button 
+                        className={'subnav-item animate__animated animate__fadeInLeft'}
+                        onClick={handleNav(7)}>
+                        Cybersecurity Awareness Training
+                    </button>
+                </ul> */}
+                </a>
                 <NavLink className={'nav-link'}>Partners</NavLink>
                 <NavLink className={'nav-link'}>Contact</NavLink>
             </ul>
@@ -71,9 +87,12 @@ export default function Nav() {
                 <IoMenuSharp />
             </button>
             <div className="nav-actions animate__animated animate__fadeInRight">
-                <button className='nav-action site-btn primary'>
+                {/* <button className='nav-action site-btn primary'>
                     Book a Call
-                </button>
+                </button> */}
+                <a href="#services" className='nav-action site-btn secondary'>
+                    Our Services
+                </a>
             </div>
             <Offcanvas show={show} onHide={handleClose} placement='end'>
                 <Offcanvas.Header>

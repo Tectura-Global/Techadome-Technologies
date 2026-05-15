@@ -154,6 +154,7 @@
 
     #contact-form {
         flex: .5;
+        width: 60%;
     }
 }
 

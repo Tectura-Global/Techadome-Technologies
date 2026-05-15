@@ -328,4 +328,8 @@
     .cta-title {
         font-size: 1.8rem;
     }
+
+    .cta-card-icon {
+        width: 20%;
+    }
 }

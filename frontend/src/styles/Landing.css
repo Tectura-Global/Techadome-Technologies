@@ -86,6 +86,7 @@ header .header-actions {
 
 .header-marquee {
     height: 3rem;
+    display: none !important;
     position: relative;
 }
 

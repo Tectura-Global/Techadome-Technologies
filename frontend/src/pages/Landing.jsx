@@ -42,9 +42,9 @@ function Landing () {
                         <span> at your beck and call</span>
                     </p>
                     <div className="header-actions"> 
-                        <a href="#services" className='nav-action site-btn primary'>
+                        {/* <a href="#services" className='nav-action site-btn primary'>
                             Book a Call
-                        </a>
+                        </a> */}
                         <a href="#services" className='nav-action site-btn secondary'>
                             Our Services
                         </a>

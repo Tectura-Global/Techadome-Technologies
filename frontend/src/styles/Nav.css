@@ -179,18 +179,22 @@ nav ul {
         color: var(--blue);
     }
 
-    .subnav a {
+    .subnav button {
         gap: 1rem;
         display: flex;
-        padding: .5rem;
+        padding: .75rem .5rem;
         color: #1e1e1e;
         align-items: center;
         text-decoration: none;
         border-radius: .25rem;
+        border: none;
+        background: none;
+        text-align: left;
+        justify-content: flex-start;
         transition: .3s ease background-color;
     }
 
-    .subnav a:hover {
+    .subnav button:hover {
         background-color: #00000010;
     }
 

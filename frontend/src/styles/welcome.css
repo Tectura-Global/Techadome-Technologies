@@ -194,6 +194,11 @@
     
     .mission {
         width: auto;
-        margin: 10rem;
+        margin: 10rem 15rem;
+    }
+
+        
+    .mission .value-block {
+        padding: 2rem;
     }
 }
