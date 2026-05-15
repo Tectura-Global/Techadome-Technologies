@@ -41,7 +41,46 @@
     color: var(--purple);
 }
 
-@media screen and (min-width: 768px) {
+.mission {
+    gap: 2rem;
+    width: 100%;
+    display: flex;
+    /* min-height: 60vh; */
+    height: fit-content;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+
+.value-block {
+    padding: 1rem;
+    border-radius: .25rem;
+    background: linear-gradient(to top, #1E9D8B, #00000000);
+}
+
+.value-block .site-heading {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.value-block .site-heading span {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+}
+
+.value-block .site-heading span svg {
+    width: 100%;
+    height: 100%;
+}
+
+.value-block .site-p {
+    font-size: 1.1rem;
+    color: #ffffff !important;
+}
+
+@media screen and (min-width: 640px) {
     
     .welcome-img {
         max-height: 20rem;
@@ -55,6 +94,24 @@
     #welcome .site-p {
         width: 70%;
         margin: 2rem auto;
+    }
+
+    .mission {
+        flex-direction: row;
+    }
+
+    .mission .value-block {
+        flex: 1;
+        max-height: 24rem;
+    }
+
+    .mission .value-block .site-heading {
+        font-size: 2rem !important;
+    }
+
+    .mission .value-block .site-p {
+        width: 90% !important;
+        margin: 0 auto !important;
     }
 }
 
@@ -85,6 +142,25 @@
         margin: 0;
         text-align: right;
     }
+
+    .mission {
+        width: auto;
+        margin: 0 5rem;
+        margin-top: 10rem;
+    }
+    
+    .mission .value-block {
+        flex: 1;
+        max-height: 24rem;
+    }
+
+    .mission .value-block .site-heading {
+        margin-bottom: 2rem !important;
+    }
+
+    .mission .value-block .site-p {
+        text-align: center !important;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -108,8 +184,16 @@
         width: 30%;
         font-size: 1.2rem;
     }
+    
+    #welcome .site-heading span.blue {
+        margin-right: 1rem;
+    }
 }
 
 @media screen and (min-width: 1600px) {    
-
+    
+    .mission {
+        width: auto;
+        margin: 10rem;
+    }
 }

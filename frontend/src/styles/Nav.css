@@ -89,7 +89,7 @@ nav ul {
     flex-direction: column;
 }
 
-@media screen and (min-width: 768px) and (orientation: portrait) {
+@media screen and (min-width: 640px) and (orientation: portrait) {
     nav {
         height: 8rem;
     }
@@ -118,6 +118,7 @@ nav ul {
 
 @media screen and (min-width: 1280px) {
     nav {
+        height: 4rem;
         padding: 0 2rem;
     }
 
@@ -217,7 +218,7 @@ nav ul {
 
     .nav-logo img {
         width: auto;
-        height: 75%;
+        height: 60%;
     }
 
     nav .menu-toggle {
@@ -231,6 +232,10 @@ nav ul {
 
 @media screen and (min-width: 1600px) {
     
+    nav {
+        height: 5rem;
+    }
+
     .nav-link {
         font-size: .9rem;
     }

@@ -1,6 +1,6 @@
 import '../styles/CTA.css'
-import { PiNetworkFill } from "react-icons/pi";
-import { AiOutlineCloudServer } from "react-icons/ai";
+import { SiGitconnected } from "react-icons/si";
+import { BsBuildingGear } from "react-icons/bs";
 import { HiShieldCheck } from "react-icons/hi2";
 import images from '../imports/images';
 
@@ -30,38 +30,35 @@ function CTA () {
             </div>
             <div className="cta-extension">
                 <div className="cta-card">
-                    <PiNetworkFill className='cta-card-icon' />
-                    <div className="cta-content">
-                        <h3 className="cta-title">
-                            Polymorphic Network Infrastracture
-                        </h3>
-                        <p className="cta-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eveniet molestiae, quibusdam et earum excepturi repellat.
-                        </p>
-                    </div>
-                </div>
-                <div className="cta-card">
-                    <AiOutlineCloudServer className='cta-card-icon' />
-                    <div className="cta-content">
-                        <h3 className="cta-title">
-                            Synchronized Cloud Architecture
-                        </h3>
-                        <p className="cta-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eveniet molestiae, quibusdam et earum excepturi repellat.
-                        </p>
-                    </div>
-                </div>
-                <div className="cta-card">
                     <HiShieldCheck className='cta-card-icon' />
                     <div className="cta-content">
                         <h3 className="cta-title">
-                            Industry-Grade Cybersecurity
+                            Security-First
                         </h3>
                         <p className="cta-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eveniet molestiae, quibusdam et earum excepturi repellat.
+                            From managed firewalls to advanced threat protection, we protect what matters most.
+                        </p>
+                    </div>
+                </div>
+                <div className="cta-card">
+                    <BsBuildingGear className='cta-card-icon' />
+                    <div className="cta-content">
+                        <h3 className="cta-title">
+                            Built Into The Building
+                        </h3>
+                        <p className="cta-text">
+                            We're embedded in the construction process from day one, not bolted on after.
+                        </p>
+                    </div>
+                </div>
+                <div className="cta-card">
+                    <SiGitconnected className='cta-card-icon' />
+                    <div className="cta-content">
+                        <h3 className="cta-title">
+                            Always-On Connectivity
+                        </h3>
+                        <p className="cta-text">
+                            SD-WAN, NOC-as-a-Service, and enterprise networking keep your business running
                         </p>
                     </div>
                 </div>

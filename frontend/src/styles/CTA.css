@@ -60,7 +60,7 @@
 .cta-content {
     flex: 1;
     display: flex;
-    transform: translateY(80%);
+    transform: translateY(calc(100% - 6vw));
     flex-direction: column;
     transition: .5s ease top,
     .5s ease transform;
@@ -73,7 +73,6 @@
 }
 
 .cta-title {
-    width: 75%;
     font-size: 6vw;
     transition: .5s ease color
                 .5s ease font-size;
@@ -165,7 +164,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
     
     #cta {
         padding: 2rem;
@@ -177,7 +176,7 @@
     
     .cta-header .site-p {
         width: 80%;
-        margin: 0;
+        margin: 0 auto;
     }
     
     .cta-header .site-btn {
@@ -188,11 +187,18 @@
         flex-direction: row;
     }
 
-    .cta-title {
-        width: 100%;
-        font-size: 2.5vw;
+    .cta-card {
+        height: 16rem;
     }
 
+    .cta-title {
+        width: 100%;
+        font-size: 2vw;
+    }
+    
+    .cta-content {
+        transform: translateY(calc(100% - 2vw));
+    }
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -209,14 +215,17 @@
     }
     
     .cta-header .site-p {
-        margin: 0;
+        margin: 0 auto;
     }
     
     .cta-header .site-btn {
         margin: 2rem 0;
     }
 
-    
+    .cta-card {
+        flex: 1;
+    }
+
     .cta-title {
         width: 100%;
         font-size: 2vw;

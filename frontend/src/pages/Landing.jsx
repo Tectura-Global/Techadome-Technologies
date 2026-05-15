@@ -10,6 +10,8 @@ import Welcome from '../components/Welcome';
 import Services from '../components/Services';
 import Meetings from '../components/Meetings';
 
+
+
 function Landing () {
     
     const mainRef = useRef()
@@ -39,7 +41,14 @@ function Landing () {
                         Developers and Technicians
                         <span> at your beck and call</span>
                     </p>
-                    <SiteInput classTitle={'header-form animate__animated animate__fadeInUp'}/>
+                    <div className="header-actions"> 
+                        <a href="#services" className='nav-action site-btn primary'>
+                            Book a Call
+                        </a>
+                        <a href="#services" className='nav-action site-btn secondary'>
+                            Our Services
+                        </a>
+                    </div>
                 </div>
                 <Marquee className='header-marquee' autoFill={true} pauseOnHover={true}>
                     <img src="/partners/amazon.svg" alt="" className="partner-logo" />
@@ -51,8 +60,8 @@ function Landing () {
             </div>
         </header>
         <Welcome />
-        <Meetings />
         <CTA />
+        <Meetings />
         <Services />
         <Team />
         <Contact />

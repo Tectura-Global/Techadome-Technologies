@@ -1,107 +1,95 @@
 import 'animate.css';
-import { act, useRef, useState } from 'react';
+import servicePillars from '../data/servicePillars';
+import { useState } from 'react';
 import '../styles/services.css';
 
-function Services () {
-
-    const [activeCourse, setActiveCourse] = useState('');
+function Services() {
+    const [activeService, setActiveService] = useState(servicePillars[0]);
 
     return (
-        
-        <div id="hypermenu" className="carousel-container desktop">
-            
-            <aside className="carousel-sidebar">
-                <div>
-                    <h2 className="site-heading">Our <span>Solutions</span></h2>
-                    <p className='site-p'>
-                        Learn fundamental programming concepts, problem-solving 
-                        techniques, and software development methodologies to 
-                        build a strong foundation in systems development and enhance 
-                        your skills as an engineer.
-                    </p>
-                </div>
-                <ul id="carousel-list">
-                    <li
-                        className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('Smart Building Cabling Solutions')}
-                    >
-                        <h3 className="site-header">Smart Building Cabling Solutions</h3>
-                        <span>NQF 4</span>
-                    </li>
-
-                    <li
-                        className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('Hybrid Cloud Connectivity')}
-                    >
-                        <h3 className="site-header">Hybrid Cloud Connectivity</h3>
-                        <span>NQF 5</span>
-                    </li>
-
-                    <li
-                        className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('Data Security')}
-                    >
-                        <h3 className="site-header">Data Security</h3>
-                        <span>NQF 4</span>
-                    </li>
-
-                    <li
-                        className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('Microsoft 365 Cloud Migration')}
-                    >
-                        <h3 className="site-header">Microsoft 365 Cloud Migration</h3>
-                        <span>NQF 5</span>
-                    </li>
-
-                    <li
-                        className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('Employee Management Systems')}
-                    >
-                        <h3 className="site-header">Employee Management Systems</h3>
-                        <span>NQF 3</span>
-                    </li>
-
-                    <li
-                        className="carousel-item"
-                        onMouseEnter={() => setActiveCourse('Building Security Systems')}
-                    >
-                        <h3 className="site-header">Building Security Systems</h3>
-                        <span>NQF 6</span>
-                    </li>
-                </ul>
-            </aside>
-
-            {activeCourse && 
-                (<div id="carousel-panels" key={activeCourse} className='animate__animated animate__fadeIn'>
-
-                    <div id="panel-1" className='panel'>
-                        <p>Salmon</p>
+        <section id="services">
+            <div id="hypermenu" className="carousel-container desktop">
+                
+                <aside className="carousel-sidebar">
+                    <div className='header'>
+                        <h2 className="site-heading">Our <span>Solutions</span></h2>
+                        <p className='site-p'>
+                            Comprehensive IT and cybersecurity solutions designed for South African SMEs and mid-market businesses.
+                        </p>
                     </div>
 
-                    <div id="panel-2" className='panel'>
-                        <p>Broccoli</p>
+                    <ul id="carousel-list">
+                        {servicePillars.map((service) => (
+                            <li
+                                key={service.id}
+                                className={`carousel-item ${activeService.id === service.id ? 'active' : ''}`}
+                                onMouseEnter={() => setActiveService(service)}
+                            >
+                                <h3 className="site-header">{service.title}</h3>
+                            </li>
+                        ))}
+                    </ul>
+                    <select 
+                        id="carousel-list"
+                        className="mobile"
+                        value={activeService.id}
+                        onChange={(e) => {
+                            const selected = servicePillars.find(s => s.id === parseInt(e.target.value));
+                            if (selected) setActiveService(selected);
+                        }}
+                    >
+                        {servicePillars.map((service) => (
+                            <option key={service.id} value={service.id}>
+                                {service.title}
+                            </option>
+                        ))}
+                    </select>
+                </aside>
+
+                {/* Right Panel - Dynamic Content */}
+                <div 
+                    id="carousel-panels" 
+                    key={activeService.id}
+                    className='animate__animated animate__fadeIn'
+                >
+                    {/* Panel 1: Title */}
+                    <div id="panel-1" className='title panel'>
+                        <h1 className='site-heading'>{activeService.title}</h1>
                     </div>
 
+                    {/* Panel 2: Description */}
+                    <div id="panel-2" className='panel main'>
+                        <p className="site-p">
+                            {activeService.description}
+                        </p>
+                    </div>
+
+                    {/* Panel 3: What's Included */}
                     <div id="panel-3" className='panel'>
-                        <p>Tamago</p>
+                        <h2 className="site-heading service-title">What's Included</h2>
+                        <ul>
+                            {activeService.whatsIncluded.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
                     </div>
 
-                    <div id="panel-4" className='panel'>
-                        <h1>{activeCourse}</h1>
-                        <p>This is where the summary of the service will go.</p>
-                    </div>
-
-                    <div id="panel-5" className='panel'>
-                        <p>Edamame</p>
-                    </div>
-
-                    <div id="panel-6" className='panel'>
-                        <p>Tomato</p>
-                    </div>
-
-                </div>)}
-        </div>
-    )
+                    {/* Panel 4: Extra Info (Unified) */}
+                    {activeService.extraInfo && (
+                        <div id="panel-4" className='panel'>
+                            <div className="details">
+                                <p className="site-p">{activeService.extraInfo}</p>
+                                <a href="#services" className='nav-action site-btn primary'>
+                                    Book a Call
+                                </a>
+                            </div>
+                            <img src={activeService.imgSrc} alt="" />
+                        </div>
+                    )}
+                </div>
+            </div>
+        </section>
+    );
 }
 
 export default Services;

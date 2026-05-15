@@ -14,7 +14,7 @@ main#landing {
 header {
     width: 100%;
     height: 100vh;
-    background: url('../assets/img/header.avif') center no-repeat;
+    background: url('../assets/img/header.webp') center no-repeat;
     background-size: cover;
 }
 
@@ -59,6 +59,15 @@ header .site-p span {
     color: var(--blue);
 }
 
+header .header-actions {
+    gap: 1rem;
+    display: flex;
+}
+
+.header-actions .nav-action {
+    text-decoration: none;
+}
+
 .header-form {
     width: 100%;
     height: 3rem;
@@ -96,7 +105,13 @@ header .site-p span {
     background-color: #ffffff20;
 }
 
-@media screen and (min-width: 768px) and (orientation: portrait) {
+@media screen and (min-width: 640px) and (orientation: portrait) {
+    
+    header {
+        height: 75vh;
+        margin-bottom: 10rem;
+    }
+
     header .site-heading {
         font-size: 3rem;
         margin-top: 5rem;
@@ -130,15 +145,27 @@ header .site-p span {
     }   
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1280px) {
+    .header-container {
+        padding: 2rem 1rem;
+    }
+    
+    .header-content {
+        margin-top: 3rem;
+    }
+
     header .site-heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
             
     header .site-p {
         width: 60%;
-        margin: 2rem 0;
-        font-size: .9rem;
+        margin: 1rem 0;
+        font-size: .75rem;
+    }
+
+    header .header-actions {
+        font-size: .75rem;
     }
         
     .header-form {
@@ -146,19 +173,29 @@ header .site-p span {
     }
     
     .header-marquee {
-        height: 6rem;
+        height: 4rem;
         position: relative;
     }
 
     .header-marquee .partner-logo {
-        height: 4rem;
-        margin-right: 4rem;
+        height: 2rem;
+        margin-right: 2rem;
     }
 }
 
 @media screen and (min-width: 1600px) {
+
     header .site-heading {
         font-size: 3.5rem;
         margin-top: 6rem;
+    }
+
+    header .site-p {
+        font-size: .9rem;
+        margin: 2rem 0;
+    }
+
+    header .header-actions {
+        font-size: .9rem;
     }
 }

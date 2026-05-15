@@ -104,8 +104,12 @@
     align-items: flex-end;
 }
 
-@media screen and (min-width: 720px) {
-        
+@media screen and (min-width: 640px) {
+    
+    .contact-container {
+        padding: 2rem;
+    }
+
     #contact .site-heading {
         font-size: 8vw;
         padding: 0 2rem;
