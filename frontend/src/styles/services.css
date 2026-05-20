@@ -31,7 +31,7 @@
 #carousel-list {
     gap: 1rem;
     display: none;
-    max-height: 60%;
+    /* max-height: 60%; */
     overflow-y: auto;
     flex-direction: column;
     position: relative;
@@ -205,8 +205,69 @@
     position: absolute;
 }
 
+@media screen and (min-width: 1080px) { 
+    #hypermenu {
+        width: 70%;
+        margin: 10rem auto;
+    }
+
+    #carousel-panels .site-heading {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #hypermenu {
+        width: auto;
+        height: 90vh;
+        /* padding: 4rem 0; */
+        margin: 5rem 2rem;
+    }
+
+    .carousel-container {
+        flex-direction: row;
+    }
+
+    .carousel-sidebar {
+        width: 30%;
+    }
+
+    .carousel-sidebar .header {
+        text-align: left;
+    }
+
+    .carousel-sidebar .header {
+        text-align: left;
+    }
+
+    #carousel-list {
+        display: flex;
+    }
+    
+    #carousel-list.mobile {
+        display: none;
+    }
+
+    #carousel-panels {
+        display: grid;
+    }
+
+    #carousel-panels .site-heading{
+        font-size: 2vw;
+    }
+
+    .carousel-item .site-header {
+        font-size: .9rem;
+    }
+
+    #carousel-panels ul li{
+        font-size: .9rem    ;
+    }
+}
+
 @media screen and (min-width: 1600px) {    
     #hypermenu {
+        width: auto;
         height: 100vh;
         padding: 4rem 0;
         margin: 5rem 8rem;
