@@ -11,7 +11,9 @@ function Footer () {
                     <h2 className='site-heading'>
                         Turning it <span>on and off</span><br></br>won't cut it this time.
                     </h2>
-                    <SiteInput classTitle={'footer-form'}/>
+                    <a href="https://outlook.office.com/book/TechadomeTechnologies@tecturaglobal.com/" className="site-btn primary">
+                        Book a Call
+                    </a>
                 </div>
                 <div className="footer-links">
                     <ul className='footer-nav'>

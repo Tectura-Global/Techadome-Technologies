@@ -79,11 +79,11 @@ function Services() {
                         <div id="panel-4" className='panel'>
                             <div className="details">
                                 <p className="site-p">{activeService.extraInfo}</p>
-                                <a href="#services" className='nav-action site-btn primary'>
+                                <a href="https://outlook.office.com/book/TechadomeTechnologies@tecturaglobal.com/" className='nav-action site-btn primary'>
                                     Book a Call
                                 </a>
                             </div>
-                            <img src={activeService.imgSrc} alt="" />
+                            <img src={activeService.imgSrc} alt="" loading='eager'/>
                         </div>
                     )}
                 </div>

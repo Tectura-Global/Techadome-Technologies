@@ -22,9 +22,9 @@ function CTA () {
                             Technical Support and intuitive Software and 
                             Security Solutions, <br></br><span>business never has to wait.</span>
                         </p>
-                        <button className="site-btn">
+                        <a className="site-btn" href='https://outlook.office.com/book/TechadomeTechnologies@tecturaglobal.com/'>
                             Book a Call
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

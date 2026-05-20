@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 import Welcome from '../components/Welcome';
 import Services from '../components/Services';
 import Meetings from '../components/Meetings';
-
+import { Helmet } from 'react-helmet-async';
 
 
 function Landing () {
@@ -17,8 +17,7 @@ function Landing () {
     const mainRef = useRef()
     
     useEffect(() => { 
-        
-        document.title = `Techadome Technologies`      
+         
         const rootElement = mainRef?.current.parentElement.parentElement;
 
         if (rootElement) {
@@ -29,6 +28,39 @@ function Landing () {
 
     return (
     <>
+        <Helmet>
+            <title>Techadome Technologies | Professional Software Company</title>
+
+            <meta
+                name="description"
+                content="Custom web development, branding, and digital solutions for modern businesses."
+            />
+
+            <meta
+                name="keywords"
+                content="IT, IT Services, web development, software, branding, SEO, Johannesburg"
+            />
+
+            <meta property="og:title" content="Techadome Technologies" />
+
+            <meta
+                property="og:description"
+                content="Professional digital solutions"
+            />
+
+            <meta property="og:type" content="website" />
+
+            <meta property="og:url" content="https://techadometechnologies.com" />
+
+            <meta
+                property="og:image"
+                content="https://yourdomain.com/og-image.jpg"
+            />
+            <link
+                rel="canonical"
+                href="https://techadometechnologies.com/"
+            />
+        </Helmet>
         <header ref={mainRef}>
             <div className="header-container">
                 <div className="header-content">
@@ -42,9 +74,9 @@ function Landing () {
                         <span> at your beck and call</span>
                     </p>
                     <div className="header-actions"> 
-                        {/* <a href="#services" className='nav-action site-btn primary'>
+                        <a href="https://outlook.office.com/book/TechadomeTechnologies@tecturaglobal.com/" className='nav-action site-btn primary'>
                             Book a Call
-                        </a> */}
+                        </a>
                         <a href="#services" className='nav-action site-btn secondary'>
                             Our Services
                         </a>
