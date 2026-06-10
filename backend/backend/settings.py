@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-tk*2toxx$zrzc4ot_@-k70w0pc!s=+u^_+o#p^6_d%=s-&29(w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api-techadome-technologies-git-883372-kgosis-projects-45bb7129.vercel.app']
 
 #CORS
 CORS_ALLOWED_ORIGINS = [
