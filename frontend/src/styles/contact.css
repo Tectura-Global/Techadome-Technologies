@@ -47,6 +47,17 @@
     flex-direction: column;
 }
 
+#contact-form select {
+    color: #ffffff;
+    background-color: #ffffff1e;
+}
+
+#contact-form select option {
+    color: #ffffff;
+    padding: .5rem;
+    background-color: #000000;
+}
+
 #contact-form .form-block {
     display: flex;
 }
