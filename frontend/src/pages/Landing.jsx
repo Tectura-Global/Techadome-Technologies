@@ -61,7 +61,7 @@ function Landing () {
                 href="https://techadometechnologies.com/"
             />
         </Helmet>
-        <header ref={mainRef}>
+        <header ref={mainRef} id='hero'>
             <div className="header-container">
                 <div className="header-content">
                     <h1 className="site-heading animate__animated animate__fadeInUp">

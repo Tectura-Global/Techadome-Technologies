@@ -29,70 +29,29 @@ export default function Nav() {
             <Link className='nav-logo animate__animated animate__fadeInLeft'>
                 <img src="/logo.png" alt="The Official Techadome logo" />
             </Link>
-            <ul className=' animate__animated animate__fadeIn'>
-                <NavLink className={'nav-link'}>Home</NavLink>
-                <NavLink className={'nav-link'}>About Us</NavLink>
-                <a className={'nav-link has-subnav'} href="#services">
-                    Services
-                    {/* <ul className='subnav'>
-                    <h5 className='site-p'>Our Services</h5>
-
-                    <button 
-                        className={'subnav-item animate__animated animate__fadeInLeft'}
-                        onClick={handleNav(1)}>
-                        Managed Security Services (MSSP)
-                    </button>
-
-                    <button 
-                        className={'subnav-item animate__animated animate__fadeInLeft'}
-                        onClick={handleNav(2)}>
-                        Network Infrastructure as a Service
-                    </button>
-
-                    <button 
-                        className={'subnav-item animate__animated animate__fadeInLeft'}
-                        onClick={handleNav(3)}>
-                        Smart Building & Structured Cabling
-                    </button>
-
-                    <button 
-                        className={'subnav-item animate__animated animate__fadeInLeft'}
-                        onClick={handleNav(4)}>
-                        SD-WAN & Connectivity Management
-                    </button>
-
-                    <button 
-                        className={'subnav-item animate__animated animate__fadeInLeft'}
-                        onClick={handleNav(5)}>
-                        Cloud & Microsoft 365 Services
-                    </button>
-
-                    <button 
-                        className={'subnav-item animate__animated animate__fadeInLeft'}
-                        onClick={handleNav(6)}>
-                        IT Support & NOC Services
-                    </button>
-
-                    <button 
-                        className={'subnav-item animate__animated animate__fadeInLeft'}
-                        onClick={handleNav(7)}>
-                        Cybersecurity Awareness Training
-                    </button>
-                </ul> */}
+            <ul className="animate__animated animate__fadeIn">
+                <a className="nav-link" href="#hero">
+                    Home
                 </a>
-                <NavLink className={'nav-link'}>Partners</NavLink>
-                <NavLink className={'nav-link'}>Contact</NavLink>
+
+                <a className="nav-link" href="#cta">
+                    About Us
+                </a>
+
+                <a className="nav-link has-subnav" href="#services">
+                    Services
+                    {/* subnav */}
+                </a>
+
+                <a className="nav-link" href="#contact">
+                    Contact
+                </a>
             </ul>
             <button className="menu-toggle animate__animated animate__fadeInUp" onClick={handleShow}>
                 <IoMenuSharp />
             </button>
             <div className="nav-actions animate__animated animate__fadeInRight">
-                {/* <button className='nav-action site-btn primary'>
-                    Book a Call
-                </button> */}
-                <a href="#services" className='nav-action site-btn secondary'>
-                    Our Services
-                </a>
+                
             </div>
             <Offcanvas show={show} onHide={handleClose} placement='end'>
                 <Offcanvas.Header>
@@ -106,10 +65,10 @@ export default function Nav() {
                 <Offcanvas.Body>
                     <ul className='animate__animated animate__fadeIn'>
                         <NavLink className={'nav-link'}>Home</NavLink>
-                        <NavLink className={'nav-link'}>Services</NavLink>
-                        <NavLink className={'nav-link'}>About Us</NavLink>
-                        <NavLink className={'nav-link'}>Partners</NavLink>
-                        <NavLink className={'nav-link'}>Contact</NavLink>
+                        <NavLink to={"/#services"} className={'nav-link'}>Services</NavLink>
+                        <NavLink to={"/#cta"} className={'nav-link'}>About Us</NavLink>
+                        {/* <NavLink className={'nav-link'}>Partners</NavLink> */}
+                        <NavLink to={"/#contact"} className={'nav-link'}>Contact</NavLink>
                     </ul>
                 </Offcanvas.Body>
             </Offcanvas>
