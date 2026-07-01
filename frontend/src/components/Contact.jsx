@@ -55,7 +55,7 @@ function Contact() {
     return (
         <section id="contact">
             <div className="contact-container">
-                <h1 className='site-heading'>
+                <h1 className='main site-heading'>
                     Reach Out
                 </h1>
                 <form onSubmit={handleSubmit} id="contact-form">
@@ -128,7 +128,24 @@ function Contact() {
 
                 </form>
             </div>
-
+            <div className="contact-info">
+                <div className="contact-block">
+                    <h2 className="site-heading">Come Stop By</h2>
+                    <ul className="address contact-list">
+                        <li>164 Katherine Street</li>
+                        <li>Barlow Park, Sandton</li>
+                        <li>Johannesburg</li>
+                        <li>2148</li>
+                    </ul>
+                </div>
+                <div className="contact-block">
+                    <h2 className="site-heading">Get in touch</h2>
+                    <ul className="e-info contact-list">
+                        <li>+27 11 568 7971</li>
+                        <li>contact@techadometechnologies.com</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     );
 }
