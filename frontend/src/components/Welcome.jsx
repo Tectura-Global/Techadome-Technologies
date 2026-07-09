@@ -34,7 +34,7 @@ function Welcome () {
                         </p>
                     </div>
                     <div className="welcome-office-image">
-                        <img src={images.officeImage} alt="" />
+                        {/* <img src={images.officeImage} alt="" /> */}
                     </div>
                 </div>
                 <div className="mission">
