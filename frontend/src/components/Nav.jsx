@@ -67,19 +67,19 @@ export default function Nav() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <ul className='animate__animated animate__fadeIn'>
-                        <HashLink className="nav-link" to={'/#hero'}>
+                        <HashLink className="nav-link" to={'/#hero'} onClick={() => handleClose()}>
                             Home
                         </HashLink>
 
-                        <HashLink className="nav-link" to={"/#welcome"}>
+                        <HashLink className="nav-link" to={"/#welcome"} onClick={() => handleClose()}>
                             About Us
                         </HashLink>
 
-                        <HashLink className="nav-link has-subnav" to={"/#services"}>
+                        <HashLink className="nav-link has-subnav" to={"/#services"} onClick={() => handleClose()}>
                             Our Services
                             {/* subnav */}
                         </HashLink>
-                        <HashLink className="nav-link has-subnav" to={"/#team"}>
+                        <HashLink className="nav-link has-subnav" to={"/#team"} onClick={() => handleClose()}>
                             Our Team
                         </HashLink>
 
