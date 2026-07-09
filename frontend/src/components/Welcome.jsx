@@ -1,12 +1,13 @@
 import '../styles/welcome.css'
 import images from "../imports/images";
+import teamHeader from '../assets/img/team-header.jpg'
 
 function Welcome () {
 
     return (
         <section id="welcome">
             <div className="welcome-container">
-                <img src={images.welcome} alt="" className="welcome-img" />
+                <img src={teamHeader} alt="" className="welcome-img" />
                 <div className="welcome-content">
                     <div className='text-content'>
                         <h2 className='site-heading'>

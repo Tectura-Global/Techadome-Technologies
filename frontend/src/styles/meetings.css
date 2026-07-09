@@ -4,7 +4,7 @@
     height: 50vh;
     overflow: hidden;
     border-radius: var(--global-radius);
-    background: url(../assets/img/meetings.webp) center no-repeat;
+    background: url(../assets/img/meetings_2.jpg) center no-repeat;
     background-size: cover;
 }
 
