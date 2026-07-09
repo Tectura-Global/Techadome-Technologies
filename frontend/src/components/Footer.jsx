@@ -14,18 +14,15 @@ function Footer () {
                     <img src="/logo.png" alt="The official Techadome logo" />
                 </Link>
                 <ul className='footer-nav'>
-                    <Link className='social-link'>
+                    <a className='social-link' href='https://www.facebook.com/profile.php?id=61581128096130' target="_blank">
                         <FaFacebookSquare />
-                    </Link>
-                    <Link className='social-link'>
+                    </a>
+                    <a className='social-link' href={'https://www.instagram.com/techadome_tech/'} target="_blank">
                         <FaInstagramSquare />
-                    </Link>
-                    <Link className='social-link'>
-                        <FaLinkedin /> 
-                    </Link>
-                    <Link className='social-link'>
-                        <AiFillTikTok />
-                    </Link>
+                    </a>
+                    <a className='social-link' to={'https://www.linkedin.com/company/techadome-technologies/'} target="_blank">
+                        <FaLinkedin />
+                    </a>
                 </ul>
                 <p className='date'>© Techadome Technologies {new Date().getFullYear()}</p>
             </div>
