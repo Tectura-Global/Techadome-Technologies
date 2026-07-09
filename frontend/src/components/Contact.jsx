@@ -154,7 +154,19 @@ function Contact() {
                         <li>support@techadometechnologies.com</li>
                     </ul>
                 </div>
-                <img src={googleMap} alt="" className='contact-map' />
+                <iframe
+                    title="Tectura Global"
+                    src="https://www.google.com/maps?q=114+Sandton+Drive,+Parkmore,+Sandton,+Johannesburg&output=embed"
+                    width="100%"
+                    height="450"
+                    style={{
+                        border: 0,
+                        borderRadius: "12px",
+                    }}
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                />
             </div>
         </section>
     </>);

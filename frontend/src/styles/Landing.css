@@ -36,7 +36,7 @@ header {
 }
 
 header .site-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 3rem;
     color: #ffffff;
     text-align: center;
@@ -48,7 +48,7 @@ header .site-heading span {
 }
 
 header .site-p {
-    /* width: 75%; */
+    width: 75%;
     margin: 1rem 0;
     color: #ffffff;
     font-size: .9rem;

@@ -53,7 +53,6 @@
 
 .carousel-sidebar .site-heading {
     font-size: 3rem;
-    color: #0B0F14;
     margin-bottom: 1rem;
 }
 
@@ -82,8 +81,8 @@
     background-color: #1E92A3;
 }
 
-.carousel-item .site-header {
-    color: #0B0F14;
+.carousel-item .site-heading {
+    font-size: 1.2rem;
     transition: .3s ease color;
 }
 
@@ -151,7 +150,6 @@
 #panel-2 ul li {
     padding: .5rem;
     font-weight: 600;
-    /* border-radius: .25rem; */
     border-left: 4px solid #1E92A3;
     /* background-color: #1E92A330; */
 }
@@ -251,7 +249,7 @@
         font-size: 2vw;
     }
 
-    .carousel-item .site-header {
+    .carousel-item .site-heading {
         font-size: .9rem;
     }
 
@@ -281,6 +279,15 @@
     .carousel-container .site-heading {
         font-size: 4rem;
         margin-bottom: 2rem;
+    }
+    
+    .carousel-item {
+        /* height: min-content; */
+    }
+    
+    .carousel-item .site-heading {
+        font-size: 1rem;
+        margin-bottom: 0;
     }
 
     #carousel-list {

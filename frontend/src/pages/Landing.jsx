@@ -71,7 +71,7 @@ function Landing () {
                         <br /></span>of Uptime Matters.
                     </h1>
                     <p className="site-p animate__animated animate__fadeInUp">
-                        Delivering Always-On Connectivity, Security, and Support—24/7, 365.
+                        Delivering Always-On Connectivity, Security, and Support.<br />24/7, 365.
                     </p>
                 </div>
                 <Marquee className='header-marquee' autoFill={true} pauseOnHover={true}>

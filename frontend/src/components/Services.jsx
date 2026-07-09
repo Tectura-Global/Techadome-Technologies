@@ -25,7 +25,7 @@ function Services() {
                                 className={`carousel-item ${activeService.id === service.id ? 'active' : ''}`}
                                 onMouseEnter={() => setActiveService(service)}
                             >
-                                <h3 className="site-header">{service.title}</h3>
+                                <h3 className="site-heading">{service.title}</h3>
                             </li>
                         ))}
                     </ul>

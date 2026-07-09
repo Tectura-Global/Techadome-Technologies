@@ -40,7 +40,7 @@ export default function Nav() {
                 </HashLink>
 
                 <HashLink className="nav-link has-subnav" to={"/#services"}>
-                    Services
+                    Our Services
                     {/* subnav */}
                 </HashLink>
 
@@ -56,7 +56,7 @@ export default function Nav() {
                     Contact Us
                 </Link>
             </div>
-            <Offcanvas show={show} onHide={handleClose} placement='end'>
+            <Offcanvas id="responsive-nav" show={show} onHide={handleClose} placement='end'>
                 <Offcanvas.Header>
                     <Offcanvas.Title>
                         <Link className='nav-logo animate__animated animate__fadeInLeft'>
@@ -67,11 +67,22 @@ export default function Nav() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <ul className='animate__animated animate__fadeIn'>
-                        <NavLink className={'nav-link'}>Home</NavLink>
-                        <NavLink to={"/#services"} className={'nav-link'}>Services</NavLink>
-                        <NavLink to={"/#cta"} className={'nav-link'}>About Us</NavLink>
-                        {/* <NavLink className={'nav-link'}>Partners</NavLink> */}
-                        <NavLink to={"/#contact"} className={'nav-link'}>Contact</NavLink>
+                        <HashLink className="nav-link" to={'/'}>
+                            Home
+                        </HashLink>
+
+                        <HashLink className="nav-link" to={"/#cta"}>
+                            About Us
+                        </HashLink>
+
+                        <HashLink className="nav-link has-subnav" to={"/#services"}>
+                            Our Services
+                            {/* subnav */}
+                        </HashLink>
+
+                        <HashLink className="nav-link" to={'/contact'}>
+                            Contact
+                        </HashLink>
                     </ul>
                 </Offcanvas.Body>
             </Offcanvas>

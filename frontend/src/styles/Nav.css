@@ -92,7 +92,13 @@ nav ul {
 
 .offcanvas ul {
     display: flex;
+    padding: 1rem;
     flex-direction: column;
+}
+
+.offcanvas ul a {
+    padding: 1rem;
+    color: black;
 }
 
 @media screen and (min-width: 640px) and (orientation: portrait) {
