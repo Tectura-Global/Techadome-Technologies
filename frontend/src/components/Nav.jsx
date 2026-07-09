@@ -31,11 +31,11 @@ export default function Nav() {
                 <img src="/logo.png" alt="The Official Techadome logo" />
             </Link>
             <ul className="animate__animated animate__fadeIn">
-                <HashLink className="nav-link" to={'/'}>
+                <HashLink className="nav-link" to={'/#hero'}>
                     Home
                 </HashLink>
 
-                <HashLink className="nav-link" to={"/#cta"}>
+                <HashLink className="nav-link" to={"/#welcome"}>
                     About Us
                 </HashLink>
 
@@ -63,11 +63,11 @@ export default function Nav() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <ul className='animate__animated animate__fadeIn'>
-                        <HashLink className="nav-link" to={'/'}>
+                        <HashLink className="nav-link" to={'/#hero'}>
                             Home
                         </HashLink>
 
-                        <HashLink className="nav-link" to={"/#cta"}>
+                        <HashLink className="nav-link" to={"/#welcome"}>
                             About Us
                         </HashLink>
 
