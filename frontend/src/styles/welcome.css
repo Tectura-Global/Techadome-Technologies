@@ -218,6 +218,7 @@
     }
 
     .welcome-img {
+        padding: 0 8rem;
         max-height: 40rem;
     }
 
