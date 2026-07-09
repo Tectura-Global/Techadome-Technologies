@@ -1,6 +1,7 @@
 import '../styles/Nav.css'
 
 import { Link, Links, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { IoMenuSharp } from "react-icons/io5";
 import { FaServer } from "react-icons/fa";
 import { IoCode } from "react-icons/io5";
@@ -30,22 +31,22 @@ export default function Nav() {
                 <img src="/logo.png" alt="The Official Techadome logo" />
             </Link>
             <ul className="animate__animated animate__fadeIn">
-                <Link className="nav-link" to={'/'}>
+                <HashLink className="nav-link" to={'/'}>
                     Home
-                </Link>
+                </HashLink>
 
-                <Link className="nav-link" to={"/#cta"}>
+                <HashLink className="nav-link" to={"/#cta"}>
                     About Us
-                </Link>
+                </HashLink>
 
-                <Link className="nav-link has-subnav" to={"/#services"}>
+                <HashLink className="nav-link has-subnav" to={"/#services"}>
                     Services
                     {/* subnav */}
-                </Link>
+                </HashLink>
 
-                <Link className="nav-link" to={'/contact'}>
+                <HashLink className="nav-link" to={'/contact'}>
                     Contact
-                </Link>
+                </HashLink>
             </ul>
             <button className="menu-toggle animate__animated animate__fadeInUp" onClick={handleShow}>
                 <IoMenuSharp />

@@ -84,9 +84,9 @@ function Landing () {
             </div>
         </header>
         <Welcome />
-        <CTA />
         <Meetings />
         <Services />
+        <CTA />
         <Team />
     </>)
 }
