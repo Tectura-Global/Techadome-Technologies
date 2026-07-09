@@ -1,6 +1,6 @@
 import '../styles/welcome.css'
 import images from "../imports/images";
-import teamHeader from '../assets/img/team-header.jpg'
+import teamHeader from '../assets/img/team-header.JPG'
 
 function Welcome () {
 

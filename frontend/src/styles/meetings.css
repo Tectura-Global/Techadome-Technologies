@@ -12,6 +12,7 @@
     height: 100%;
     padding: 1rem;
     display: flex;
+    backdrop-filter: blur(2px);
     flex-direction: column;
     background-color: #00000060;
     justify-content: space-between;
