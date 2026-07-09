@@ -1,5 +1,6 @@
 import '../styles/Landing.css'
 
+import Nav from '../components/Nav';
 import CTA from '../components/CTA';
 import Team from '../components/Team';
 import Marquee from "react-fast-marquee";
@@ -61,26 +62,17 @@ function Landing () {
                 href="https://techadometechnologies.com/"
             />
         </Helmet>
+        <Nav />
         <header ref={mainRef} id='hero'>
             <div className="header-container">
                 <div className="header-content">
                     <h1 className="site-heading animate__animated animate__fadeInUp">
-                        The IT Department<br></br>
-                        that <span>Never Sleeps</span>
+                        Where <span>Every Second
+                        <br /></span>of Uptime Matters.
                     </h1>
                     <p className="site-p animate__animated animate__fadeInUp">
-                        An entire floor of expertly-trained 
-                        Developers and Technicians
-                        <span> at your beck and call</span>
+                        Delivering Always-On Connectivity, Security, and Support—24/7, 365.
                     </p>
-                    <div className="header-actions"> 
-                        <a href="https://outlook.office.com/book/TechadomeTechnologies@tecturaglobal.com/" className='nav-action site-btn primary'>
-                            Book a Call
-                        </a>
-                        <a href="#services" className='nav-action site-btn secondary'>
-                            Our Services
-                        </a>
-                    </div>
                 </div>
                 <Marquee className='header-marquee' autoFill={true} pauseOnHover={true}>
                     <img src="/partners/amazon.svg" alt="" className="partner-logo" />
@@ -96,7 +88,6 @@ function Landing () {
         <Meetings />
         <Services />
         <Team />
-        <Contact />
     </>)
 }
 

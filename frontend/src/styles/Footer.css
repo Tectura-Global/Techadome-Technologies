@@ -1,6 +1,5 @@
 footer {
-    gap: 5rem;
-    height: 100%;
+    height: 25vh;
     margin: .5rem;
     padding: 1rem;
     display: flex;
@@ -11,32 +10,17 @@ footer {
 }
 
 .footer-container {
-    gap: 5rem;
-    display: flex;
+    gap: 2rem;
     height: 100%;
-    flex-direction: column;
-}
-
-.footer-contact {
     display: flex;
     flex-direction: column;
-}
-
-footer .site-heading {
-    color: #ffffff;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-footer .site-heading span {
-    color: var(--blue);
+    justify-content: space-between;
 }
 
 .footer-nav {
     gap: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-nav a {
@@ -49,23 +33,15 @@ footer .site-heading span {
     left: 10%;
 }
 
-.footer-footnotes {
-    gap: 1rem;
-    display: flex;
-    padding-top: 1rem;
-    flex-direction: column;
-    border-top: 1px solid #ffffff30;
-}
-
 .footer-logo {
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer-footnotes .date{
+.footer-container .date{
     color: #ffffff;
     text-align: center;
 }
@@ -74,36 +50,11 @@ footer .site-heading span {
     height: 100%;
 }
 
+footer .social-link {
+    font-size: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
-    footer {
-        /* min-height: 50vh; */
-    }
-
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    footer .site-heading {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .footer-contact {
-        width: fit-content;
-    }
-        
-    .footer-nav {
-        gap: .5rem;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer-footnotes {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
     
     .footer-logo {
         width: fit-content;
@@ -111,22 +62,28 @@ footer .site-heading span {
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-    footer {
-        min-height: 50vh;
+    .footer-container {
+        align-items: center;
+        flex-direction: row;
     }
 }
 
 @media screen and (min-width: 1240px) {
     footer {
-        min-height: 60vh;
-        padding: 2rem 2rem 1rem 2rem;
+        height: auto;
+    }
+
+    .footer-container {
+        position: relative;
+    }
+
+    .footer-nav {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
     }
 
     footer .site-heading {
         margin-bottom: 1rem;
     }
-}
-
-@media screen and (min-width: 1600px) {
-    
 }

@@ -57,15 +57,9 @@ function Services() {
                         <h1 className='site-heading'>{activeService.title}</h1>
                     </div>
 
-                    {/* Panel 2: Description */}
-                    <div id="panel-2" className='panel main'>
-                        <p className="site-p">
-                            {activeService.description}
-                        </p>
-                    </div>
 
-                    {/* Panel 3: What's Included */}
-                    <div id="panel-3" className='panel'>
+                    {/* Panel 2: What's Included */}
+                    <div id="panel-2" className='panel'>
                         <h2 className="site-heading service-title">What's Included</h2>
                         <ul>
                             {activeService.whatsIncluded.map((item, index) => (
@@ -74,14 +68,11 @@ function Services() {
                         </ul>
                     </div>
 
-                    {/* Panel 4: Extra Info (Unified) */}
+                    {/* Panel 3: Extra Info (Unified) */}
                     {activeService.extraInfo && (
-                        <div id="panel-4" className='panel'>
+                        <div id="panel-3" className='panel'>
                             <div className="details">
-                                <p className="site-p">{activeService.extraInfo}</p>
-                                <a href="https://outlook.office.com/book/TechadomeTechnologies@tecturaglobal.com/" className='nav-action site-btn primary'>
-                                    Book a Call
-                                </a>
+                                <p className="site-p">{activeService.description}</p>
                             </div>
                             <img src={activeService.imgSrc} alt="" loading='eager'/>
                         </div>

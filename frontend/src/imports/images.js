@@ -18,6 +18,8 @@ import services_5 from '../assets/img/services/5.webp';
 import services_6 from '../assets/img/services/6.webp';
 import services_7 from '../assets/img/services/7.webp';
 
+import officeImage from '../assets/img/misc-1.jpg';
+
 const images = {
     cta1,
     cta2,
@@ -35,7 +37,8 @@ const images = {
     services_4,
     services_5,
     services_6,
-    services_7
+    services_7,
+    officeImage,
 }
 
 export default images

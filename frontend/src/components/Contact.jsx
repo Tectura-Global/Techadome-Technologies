@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import api from '../api/api';
 import '../styles/contact.css'
+import Nav from './Nav';
+import servicePillars from '../data/servicePillars';
+import googleMap from '../assets/img/googlemap.webp'
 
 function Contact() {
 
@@ -52,11 +55,12 @@ function Contact() {
         setLoading(false);
     };
 
-    return (
+    return (<>
+        <Nav />
         <section id="contact">
             <div className="contact-container">
                 <h1 className='main site-heading'>
-                    Reach Out
+                    Contact Us
                 </h1>
                 <form onSubmit={handleSubmit} id="contact-form">
 
@@ -108,10 +112,14 @@ function Contact() {
                         value={formData.service}
                         onChange={handleChange}
                         required
-                    >
+                        >
                         <option value="">-- Please select --</option>
-                        <option value="web-development">Web Development</option>
-                        <option value="graphic-design">Graphic Design</option>
+                        
+                        {servicePillars.map((service) => (
+                            <option key={service.id} value={service.slug}>
+                            {service.title}
+                            </option>
+                        ))}
                     </select>
 
                     <textarea
@@ -130,7 +138,7 @@ function Contact() {
             </div>
             <div className="contact-info">
                 <div className="contact-block">
-                    <h2 className="site-heading">Come Stop By</h2>
+                    <h2 className="site-heading">Visit Us</h2>
                     <ul className="address contact-list">
                         <li>164 Katherine Street</li>
                         <li>Barlow Park, Sandton</li>
@@ -142,12 +150,14 @@ function Contact() {
                     <h2 className="site-heading">Get in touch</h2>
                     <ul className="e-info contact-list">
                         <li>+27 11 568 7971</li>
-                        <li>contact@techadometechnologies.com</li>
+                        <li>info@techadometechnologies.com</li>
+                        <li>support@techadometechnologies.com</li>
                     </ul>
                 </div>
+                <img src={googleMap} alt="" className='contact-map' />
             </div>
         </section>
-    );
+    </>);
 }
 
 export default Contact;

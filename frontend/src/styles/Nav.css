@@ -1,12 +1,14 @@
 nav {
+    top: 0;
     z-index: 99 !important;
     height: 4rem;
     display: flex;
     padding: 0 1rem;
-    position: relative;
+    position: sticky;
     align-items: center;
     /* border: 1px solid red; */
     justify-content: space-between;
+    background-color: #000000;
 }
 
 .nav-logo {
@@ -61,6 +63,10 @@ nav ul {
 .nav-actions {
     gap: 1rem;
     display: none;
+}
+
+.nav-actions .nav-action {
+    text-decoration: none;
 }
 
 .offcanvas {
