@@ -19,19 +19,6 @@ function Team () {
                 <div className='team-marquee'>
                     <div className="team-card">
                         <div className="team-img">
-                            <img src={images.teamAlbert} alt="" />
-                        </div>
-                        <div className="team-details">
-                            <h4 className='site-heading'>
-                                Albert Githae
-                            </h4>
-                            <p className='site-p'>
-                                Operations Manager
-                            </p>
-                        </div>
-                    </div>
-                    <div className="team-card">
-                        <div className="team-img">
                             <img src={images.teamInnocent} alt="" />
                         </div>
                         <div className="team-details">
@@ -45,6 +32,19 @@ function Team () {
                     </div>
                     <div className="team-card">
                         <div className="team-img">
+                            <img src={images.teamAlbert} alt="" />
+                        </div>
+                        <div className="team-details">
+                            <h4 className='site-heading'>
+                                Albert Githae
+                            </h4>
+                            <p className='site-p'>
+                                Operations Manager
+                            </p>
+                        </div>
+                    </div>
+                    <div className="team-card">
+                        <div className="team-img">
                             <img src={images.teamKhutso} alt="" />
                         </div>
                         <div className="team-details">
@@ -52,7 +52,7 @@ function Team () {
                                 Khutso Malatji
                             </h4>
                             <p className='site-p'>
-                                IT Manager
+                                Network Manager
                             </p>
                         </div>
                     </div>
