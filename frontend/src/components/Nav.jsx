@@ -43,6 +43,10 @@ export default function Nav() {
                     Our Services
                     {/* subnav */}
                 </HashLink>
+                <HashLink className="nav-link has-subnav" to={"/#team"}>
+                    Our Team
+                    {/* subnav */}
+                </HashLink>
             </ul>
             <button className="menu-toggle animate__animated animate__fadeInUp" onClick={handleShow}>
                 <IoMenuSharp />
@@ -74,6 +78,9 @@ export default function Nav() {
                         <HashLink className="nav-link has-subnav" to={"/#services"}>
                             Our Services
                             {/* subnav */}
+                        </HashLink>
+                        <HashLink className="nav-link has-subnav" to={"/#team"}>
+                            Our Team
                         </HashLink>
 
                         <div className="nav-actions animate__animated animate__fadeInRight">
