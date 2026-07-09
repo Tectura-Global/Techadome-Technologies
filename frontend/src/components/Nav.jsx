@@ -43,10 +43,6 @@ export default function Nav() {
                     Our Services
                     {/* subnav */}
                 </HashLink>
-
-                <HashLink className="nav-link" to={'/contact'}>
-                    Contact
-                </HashLink>
             </ul>
             <button className="menu-toggle animate__animated animate__fadeInUp" onClick={handleShow}>
                 <IoMenuSharp />
@@ -80,9 +76,11 @@ export default function Nav() {
                             {/* subnav */}
                         </HashLink>
 
-                        <HashLink className="nav-link" to={'/contact'}>
-                            Contact
-                        </HashLink>
+                        <div className="nav-actions animate__animated animate__fadeInRight">
+                            <Link to={'/contact'} className='nav-action site-btn primary'>
+                                Contact Us
+                            </Link>
+                        </div>
                     </ul>
                 </Offcanvas.Body>
             </Offcanvas>
