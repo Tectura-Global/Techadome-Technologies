@@ -60,15 +60,18 @@
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
     #meetings {
+        margin: 0;
+        border-radius: 0;
         /* min-height: 80vh; */
     }
     
     #meetings .site-heading {
+        width: 100%;
         font-size: 4vw;
     }
 
     #meetings .site-p {
-        width: 50%
+        width: 100%
     }
 }
 
@@ -84,15 +87,15 @@
 
 @media screen and (min-width: 1600px) {    
     #meetings {
-        margin: 2rem 8rem;
+        /* margin: 2rem 8rem; */
     }
     
     #meetings .site-heading {
-        width: 50%;
+        /* width: 50%; */
         font-size: 3vw;
     }
 
     #meetings .site-p {
-        width: 30%;
+        /* width: 30%; */
     }
 }

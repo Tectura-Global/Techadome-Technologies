@@ -165,7 +165,7 @@
 @media screen and (min-width: 1600px) {
     #team {
         margin: 5rem 0;
-        padding: 2rem 8rem;
+        padding: 2rem;
     }
 
     #team .header .site-p {
