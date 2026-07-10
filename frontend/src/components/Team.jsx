@@ -45,19 +45,6 @@ function Team () {
                     </div>
                     <div className="team-card">
                         <div className="team-img">
-                            <img src={images.teamKhutso} alt="" />
-                        </div>
-                        <div className="team-details">
-                            <h4 className='site-heading'>
-                                Khutso Malatji
-                            </h4>
-                            <p className='site-p'>
-                                Network Manager
-                            </p>
-                        </div>
-                    </div>
-                    <div className="team-card">
-                        <div className="team-img">
                             <img src={images.teamLenford} alt="" />
                         </div>
                         <div className="team-details">
@@ -66,6 +53,19 @@ function Team () {
                             </h4>
                             <p className='site-p'>
                                 IT Manager
+                            </p>
+                        </div>
+                    </div>
+                    <div className="team-card">
+                        <div className="team-img">
+                            <img src={images.teamKhutso} alt="" />
+                        </div>
+                        <div className="team-details">
+                            <h4 className='site-heading'>
+                                Khutso Malatji
+                            </h4>
+                            <p className='site-p'>
+                                Network Manager
                             </p>
                         </div>
                     </div>

@@ -211,7 +211,8 @@
         align-items: top;
     }
     .cta-header .site-heading {
-        width: 80%;
+        width: 100%;
+        font-size: 2vw;
     }
     
     .cta-header .site-p {
@@ -248,7 +249,7 @@
     }
 
     .cta-header .content {
-        width: 40%;
+        /* width: 40%; */
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -267,8 +268,8 @@
     }
 
     .cta-header .site-heading {
-        width: 40%;
-        font-size: 3rem;
+        /* width: 40%; */
+        font-size: 2vw;
         text-align: left;
         flex-shrink: 0;
     }
@@ -305,8 +306,9 @@
     }
 
     .cta-header .site-heading {
-        width: 50%;
-        font-size: 5rem;
+        /* width: 50%; */
+        font-size: 4vw;
+        text-align: center;
     }
         
     .cta-header .site-p {

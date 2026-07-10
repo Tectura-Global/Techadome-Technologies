@@ -1,8 +1,14 @@
 #contact {
-    display: flex;
-    flex-direction: column;
     background: url('../assets/img/contact.webp') center no-repeat;
     background-size: cover;
+}
+
+.contact-backdrop {
+    display: flex;
+    height: 100%;
+    background-size: cover;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
 }
 
 .contact-container {
@@ -231,7 +237,10 @@
 @media screen and (min-width: 1240px) {
 
     #contact {
-        height: 100vh;
+        height: fit-content;
+    }
+    
+    .contact-backdrop {
         align-items: flex-end;
         flex-direction: row;
         justify-content: space-between;
