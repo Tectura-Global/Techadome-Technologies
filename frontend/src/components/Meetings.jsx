@@ -6,7 +6,7 @@ function Meetings () {
         <section id="meetings">
             <div className="meetings-container">
                 <h2 className="site-heading">
-                    Meetings are hard enough without the <span>connectivity</span> issues.
+                    Meetings are hard enough without the connectivity issues.
                 </h2>
                 <p className="site-p">
                     With Techadome Technologies' <span>Smart Building Network Architecture</span> & <span>Structured Cabling, </span>

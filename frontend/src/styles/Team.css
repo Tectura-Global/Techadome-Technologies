@@ -21,8 +21,8 @@
     justify-content: space-between;
 }
 
-#team .header .site-p span {
-    color: var(--purple);
+#team .header .site-p {
+    display: none;
 }
 
 #team .header .site-heading {
@@ -183,6 +183,11 @@
 
     .team-card .site-heading {
         font-size: 2rem;
+    }
+
+    .team-card .site-p {
+        font-size: 1rem;
+        font-weight: 600;
     }
 
     #team .header .site-heading {

@@ -27,7 +27,8 @@
     color: var(--blue);
 }
 
-#meetings .site-p span {
+#meetings .site-p {
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -67,8 +68,7 @@
     }
 
     #meetings .site-p {
-        width: 50%;
-        font-size: 1.2rem;
+        width: 50%
     }
 }
 

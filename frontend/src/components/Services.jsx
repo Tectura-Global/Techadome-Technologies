@@ -12,7 +12,7 @@ function Services() {
                 
                 <aside className="carousel-sidebar">
                     <div className='header'>
-                        <h2 className="site-heading">Our <span>Solutions</span></h2>
+                        <h2 className="site-heading">Our Solutions</h2>
                         <p className='site-p'>
                             Comprehensive IT and cybersecurity solutions designed for South African SMEs and mid-market businesses.
                         </p>

@@ -7,7 +7,6 @@ function Welcome () {
     return (
         <section id="welcome">
             <div className="welcome-container">
-                <img src={teamHeader} alt="" className="welcome-img" />
                 <div className="welcome-content">
                     <div className='text-content'>
                         <h2 className='site-heading'>
@@ -33,10 +32,11 @@ function Welcome () {
                             Inspired by industry leaders like Techadome Technologies, we combine technical 
                             expertise with a client-first approach to deliver measurable business value. */}
                         </p>
+                        <button className="site-btn primary">
+                            Download our profile
+                        </button>
                     </div>
-                    <div className="welcome-office-image">
-                        {/* <img src={images.officeImage} alt="" /> */}
-                    </div>
+                    <img src={teamHeader} alt="" className="welcome-img" />
                 </div>
                 <div className="mission">
                         <div className="value-block">

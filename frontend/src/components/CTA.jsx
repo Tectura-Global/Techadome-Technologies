@@ -13,7 +13,7 @@ function CTA () {
                     <h2 className='site-heading'>
                         <span className='animated'>
                             Your business only runs
-                            as smooth as <span className='color'>your system</span>
+                            as smooth as your system
                         </span>
                     </h2>
                     <div className='content'>

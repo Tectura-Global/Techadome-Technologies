@@ -20,7 +20,7 @@ function Footer () {
                     <a className='social-link' href={'https://www.instagram.com/techadome_tech/'} target="_blank">
                         <FaInstagramSquare />
                     </a>
-                    <a className='social-link' to={'https://www.linkedin.com/company/techadome-technologies/'} target="_blank">
+                    <a className='social-link' href={'https://www.linkedin.com/company/techadome-technologies/'} target="_blank">
                         <FaLinkedin />
                     </a>
                 </ul>

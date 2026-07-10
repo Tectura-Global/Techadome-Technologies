@@ -26,6 +26,7 @@
 
 .carousel-sidebar .header .site-p {
     font-size: 1rem;
+    font-weight: 600;
 }
 
 #carousel-list {
@@ -178,6 +179,7 @@
     width: 100%;
     color: #ffffff;
     font-size: .9rem;
+    font-weight: 600;
 }
 
 #panel-3 .site-btn {
@@ -251,6 +253,7 @@
 
     .carousel-item .site-heading {
         font-size: .9rem;
+        font-weight: 600;
     }
 
     #carousel-panels ul li{

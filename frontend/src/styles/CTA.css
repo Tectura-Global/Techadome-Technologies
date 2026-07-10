@@ -276,7 +276,8 @@
     .cta-header .site-p {
         /* width: 50%; */
         text-align: right;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        display: none;
     }
     
     .cta-header .site-btn {
@@ -295,7 +296,7 @@
 
 @media screen and (min-width: 1600px) {    
     #cta {
-        margin: 5rem 0;
+        /* margin: 5rem 0; */
         padding: 2rem 8rem;
     }
     
