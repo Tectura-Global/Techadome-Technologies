@@ -137,7 +137,7 @@ function Contact() {
                 </form>
             </div>
             <div className="contact-info">
-                <div className="contact-block">
+                <div className="contact-block" id='address'>
                     <h2 className="site-heading">Visit Us</h2>
                     <ul className="address contact-list">
                         <li>164 Katherine Street</li>
@@ -146,7 +146,7 @@ function Contact() {
                         <li>2148</li>
                     </ul>
                 </div>
-                <div className="contact-block">
+                <div className="contact-block" id='contacts'>
                     <h2 className="site-heading">Get in touch</h2>
                     <ul className="e-info contact-list">
                         <li>+27 11 568 7971</li>
@@ -155,10 +155,10 @@ function Contact() {
                     </ul>
                 </div>
                 <iframe
+                    id='contact-map'
                     title="Tectura Global"
                     src="https://www.google.com/maps?q=114+Sandton+Drive,+Parkmore,+Sandton,+Johannesburg&output=embed"
-                    width="100%"
-                    height="450"
+                    height="250"
                     style={{
                         border: 0,
                         borderRadius: "12px",

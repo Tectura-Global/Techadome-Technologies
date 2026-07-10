@@ -10,7 +10,7 @@
     display: flex;
     padding: 2rem 1rem;
     flex-direction: column;
-    background-color: #000000bd;
+    /* background-color: #000000bd; */
     justify-content: space-between;
 }
 
@@ -77,7 +77,7 @@
     border: none;
     padding: .75rem;
     color: #ffffff;
-    background-color: #ffffff1e;
+    background-color: #202020b2;
     transition: border .3s ease,
                 backdrop-filter .5s ease;
     border-bottom: 2px solid #ffffff;
@@ -122,13 +122,13 @@
     display: flex;
     padding: 2rem 1rem;
     flex-direction: column;
-    background-color: #000000bd;
+    /* background-color: #000000bd; */
 }
 
 .contact-block {
     padding: 1rem;
     border-radius: .25rem;
-    background-color: #ffffff1e;
+    background-color: #202020b2;
 }
 
 .contact-block .site-heading {
@@ -215,11 +215,16 @@
 
     .contact-info {
         flex-direction: row;
+        align-items: flex-end;
         justify-content: space-evenly;
     }
 
     .contact-block .site-heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .contact-block ul li {
+        font-size: 1rem;
     }
 }
 
@@ -227,25 +232,37 @@
 
     #contact {
         height: 100vh;
+        align-items: flex-end;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .contact-container {
         flex: 1;
+        max-width: 50%;
     }
 
     .contact-info {
-        width: 35%;
-        padding-block: 2rem;
-        padding-left: 10rem;
-        flex-direction: column;
-        justify-content: space-between;
+        gap: 1rem;
+        width: 40%;
+        display: grid;
+        height: min-content;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .contact-block#address { grid-area: 1 / 1 / 2 / 2; }
+    .contact-block#contacts { grid-area: 1 / 2 / 2 / 3; }
+    #contact-map {
+        width: 100%;
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .contact-block {
+        height: 12rem;
     }
 
     .contact-block .site-heading::after {
         width: .25rem;
-    }
-    .contact-content .site-p {
-        font-size: 1.2rem;
     }
 }
