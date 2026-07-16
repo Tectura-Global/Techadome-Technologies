@@ -239,21 +239,28 @@
     #contact {
         height: fit-content;
     }
+
+    #contact .site-heading.main {
+        text-align: center;
+    }
+
+    #contact .site-heading::after {
+        display: none;
+    }
     
     .contact-backdrop {
-        align-items: flex-end;
-        flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
     }
 
     .contact-container {
         flex: 1;
-        max-width: 50%;
+        width: 50%;
+        padding: 2rem 1rem;
     }
 
     .contact-info {
         gap: 1rem;
-        width: 40%;
+        width: 50%;
         display: grid;
         height: min-content;
         grid-template-columns: repeat(2, 1fr);
