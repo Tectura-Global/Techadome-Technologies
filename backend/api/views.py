@@ -50,7 +50,7 @@ Message:
 
         with smtplib.SMTP_SSL(settings.EMAIL_HOST, 465, context=context) as server:
             server.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
-            server.sendmail(settings.EMAIL_HOST_USER, 'contact@techadometechnologies.com', msg.as_string())
+            server.sendmail(settings.EMAIL_HOST_USER, 'info@techadometechnologies.com', msg.as_string())
 
         return JsonResponse({'success': True})
 
