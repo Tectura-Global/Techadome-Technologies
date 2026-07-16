@@ -31,7 +31,7 @@ def contact(request):
         msg = MIMEMultipart()
         msg['Subject'] = f"New Contact Form: {service}"
         msg['From'] = settings.EMAIL_HOST_USER
-        msg['To'] = 'contact@techadometechnologies.com'
+        msg['To'] = 'info@techadometechnologies.com'
 
         body = f"""Name: {first_name} {last_name}
 Email: {email}
